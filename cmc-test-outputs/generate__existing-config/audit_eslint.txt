@@ -4,22 +4,22 @@ CMC TEST OUTPUT
 
 METADATA
 --------
-Timestamp:    2025-12-05 11:26:59
+Timestamp:    2025-12-05 16:56:59
 Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/generate/existing-config
 Command:      cmc audit eslint
 Description:  Audit ESLint config only
-Exit Code:    1
-Duration:     .258966000s
-CMC Version:  1.2.0
+Exit Code:    0
+Duration:     .138335000s
+CMC Version:  1.4.0
 
 PROJECT FILES
 -------------
 total 24
-drwxr-xr-x@ 5 christopherlittle  staff  160  5 Dec 10:21 .
-drwxr-xr-x@ 5 christopherlittle  staff  160  5 Dec 10:21 ..
--rw-------@ 1 christopherlittle  staff  179  5 Dec 10:21 cmc.toml
--rw-------@ 1 christopherlittle  staff  144  5 Dec 10:21 eslint.config.js
--rw-------@ 1 christopherlittle  staff  103  5 Dec 10:21 ruff.toml
+drwxr-xr-x@ 5 christopherlittle  staff  160 Dec  5 16:49 .
+drwxr-xr-x@ 7 christopherlittle  staff  224 Dec  5 16:49 ..
+-rw-------@ 1 christopherlittle  staff  179 Dec  5 16:49 cmc.toml
+-rw-------@ 1 christopherlittle  staff  351 Dec  5 16:49 eslint.config.js
+-rw-------@ 1 christopherlittle  staff  103 Dec  5 16:49 ruff.toml
 
 CMC.TOML CONTENTS
 -----------------
@@ -38,10 +38,7 @@ select = ["E", "F"]
 
 STDOUT
 ------
-✗ eslint.config.js has mismatches:
-  - missing rule: no-var = "error"
-  - missing rule: prefer-const = "error"
-  - extra rule: no-console = "error"
+✓ eslint.config.js matches cmc.toml ruleset
 
 STDERR
 ------

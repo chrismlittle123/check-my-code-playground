@@ -4,20 +4,20 @@ CMC TEST OUTPUT
 
 METADATA
 --------
-Timestamp:    2025-12-05 11:26:30
+Timestamp:    2025-12-05 16:56:41
 Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/context/no-language/multiple
 Command:      cmc check 
 Description:  Run linter checks on entire project
 Exit Code:    0
-Duration:     .167987000s
-CMC Version:  1.2.0
+Duration:     .186850000s
+CMC Version:  1.4.0
 
 PROJECT FILES
 -------------
 total 8
-drwx------@ 3 christopherlittle  staff   96  5 Dec 10:21 .
-drwxr-xr-x@ 8 christopherlittle  staff  256  5 Dec 10:21 ..
--rw-------@ 1 christopherlittle  staff   98  5 Dec 10:21 cmc.toml
+drwx------@ 3 christopherlittle  staff   96 Dec  5 16:49 .
+drwxr-xr-x@ 7 christopherlittle  staff  224 Dec  5 16:49 ..
+-rw-------@ 1 christopherlittle  staff   98 Dec  5 16:49 cmc.toml
 
 CMC.TOML CONTENTS
 -----------------

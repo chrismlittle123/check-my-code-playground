@@ -1,0 +1,15 @@
+[project]
+name = "full-project"
+
+[prompts]
+templates = ["typescript/5.5"]
+
+[rulesets.eslint.rules]
+"no-console" = "warn"
+"no-var" = "error"
+
+[rulesets.ruff]
+line-length = 100
+
+[rulesets.ruff.lint]
+select = ["E", "F", "I"]

@@ -1,0 +1,44 @@
+================================================================================
+CMC TEST OUTPUT
+================================================================================
+
+METADATA
+--------
+Timestamp:    2025-12-05 16:56:12
+Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/check/typescript/with-ignored-dirs
+Command:      cmc context --target copilot --stdout
+Description:  Generate Copilot context (stdout)
+Exit Code:    2
+Duration:     .251698000s
+CMC Version:  1.4.0
+
+PROJECT FILES
+-------------
+total 16
+drwxr-xr-x@  6 christopherlittle  staff  192 Dec  5 16:49 .
+drwxr-xr-x@ 12 christopherlittle  staff  384 Dec  5 16:49 ..
+drwxr-xr-x@  3 christopherlittle  staff   96 Dec  5 16:49 build
+-rw-r--r--@  1 christopherlittle  staff   86 Dec  5 16:49 cmc.toml
+-rw-r--r--@  1 christopherlittle  staff  257 Dec  5 16:49 eslint.config.js
+drwxr-xr-x@  3 christopherlittle  staff   96 Dec  5 16:49 src
+
+CMC.TOML CONTENTS
+-----------------
+[project]
+name = "with-ignored-dirs-test"
+
+[rulesets.eslint.rules]
+"no-var" = "error"
+
+STDOUT
+------
+
+STDERR
+------
+Error: No prompts templates configured in cmc.toml.
+
+Add to your cmc.toml:
+  [prompts]
+  templates = ["typescript/5.5"]
+
+================================================================================

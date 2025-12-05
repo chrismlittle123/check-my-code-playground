@@ -1,0 +1,45 @@
+================================================================================
+CMC TEST OUTPUT
+================================================================================
+
+METADATA
+--------
+Timestamp:    2025-12-05 16:55:51
+Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/check/typescript/nested-dirs
+Command:      cmc check 
+Description:  Run linter checks on entire project
+Exit Code:    1
+Duration:     2.049404000s
+CMC Version:  1.4.0
+
+PROJECT FILES
+-------------
+total 24
+drwxr-xr-x@  7 christopherlittle  staff  224 Dec  5 16:49 .
+drwxr-xr-x@ 12 christopherlittle  staff  384 Dec  5 16:49 ..
+-rw-r--r--@  1 christopherlittle  staff  105 Dec  5 16:49 cmc.toml
+-rw-r--r--@  1 christopherlittle  staff  343 Dec  5 16:49 eslint.config.js
+drwxr-xr-x@  3 christopherlittle  staff   96 Dec  5 16:49 lib
+-rw-r--r--@  1 christopherlittle  staff   69 Dec  5 16:49 root.ts
+drwxr-xr-x@  4 christopherlittle  staff  128 Dec  5 16:49 src
+
+CMC.TOML CONTENTS
+-----------------
+[project]
+name = "nested-dirs-test"
+
+[rulesets.eslint.rules]
+"no-var" = "error"
+"prefer-const" = "error"
+
+STDOUT
+------
+lib/legacy.ts:2 [eslint/no-var] Unexpected var, use let or const instead.
+src/utils/helpers.ts:2 [eslint/no-var] Unexpected var, use let or const instead.
+
+✗ 2 violations found
+
+STDERR
+------
+
+================================================================================

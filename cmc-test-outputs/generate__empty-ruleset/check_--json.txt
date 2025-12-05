@@ -4,20 +4,20 @@ CMC TEST OUTPUT
 
 METADATA
 --------
-Timestamp:    2025-12-05 11:26:53
+Timestamp:    2025-12-05 16:56:55
 Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/generate/empty-ruleset
 Command:      cmc check --json
 Description:  Run linter checks with JSON output
 Exit Code:    0
-Duration:     .191685000s
-CMC Version:  1.2.0
+Duration:     .145405000s
+CMC Version:  1.4.0
 
 PROJECT FILES
 -------------
 total 8
-drwxr-xr-x@ 3 christopherlittle  staff   96  5 Dec 10:21 .
-drwxr-xr-x@ 5 christopherlittle  staff  160  5 Dec 10:21 ..
--rw-------@ 1 christopherlittle  staff   76  5 Dec 10:21 cmc.toml
+drwxr-xr-x@ 3 christopherlittle  staff   96 Dec  5 16:49 .
+drwxr-xr-x@ 7 christopherlittle  staff  224 Dec  5 16:49 ..
+-rw-------@ 1 christopherlittle  staff   76 Dec  5 16:49 cmc.toml
 
 CMC.TOML CONTENTS
 -----------------

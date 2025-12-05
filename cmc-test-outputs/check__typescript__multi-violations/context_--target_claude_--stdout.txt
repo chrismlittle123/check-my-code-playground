@@ -4,23 +4,23 @@ CMC TEST OUTPUT
 
 METADATA
 --------
-Timestamp:    2025-12-05 11:25:42
+Timestamp:    2025-12-05 16:55:48
 Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/check/typescript/multi-violations
 Command:      cmc context --target claude --stdout
 Description:  Generate Claude context (stdout)
 Exit Code:    2
-Duration:     .250132000s
-CMC Version:  1.2.0
+Duration:     .237758000s
+CMC Version:  1.4.0
 
 PROJECT FILES
 -------------
 total 32
-drwxr-xr-x@ 6 christopherlittle  staff  192  5 Dec 10:21 .
-drwxr-xr-x@ 8 christopherlittle  staff  256  5 Dec 10:21 ..
--rw-------@ 1 christopherlittle  staff  141  5 Dec 10:21 cmc.toml
--rw-------@ 1 christopherlittle  staff  339  5 Dec 10:21 eslint.config.js
--rw-------@ 1 christopherlittle  staff  241  5 Dec 10:21 file-a.ts
--rw-------@ 1 christopherlittle  staff  197  5 Dec 10:21 file-b.ts
+drwxr-xr-x@  6 christopherlittle  staff  192 Dec  5 16:49 .
+drwxr-xr-x@ 12 christopherlittle  staff  384 Dec  5 16:49 ..
+-rw-------@  1 christopherlittle  staff  141 Dec  5 16:49 cmc.toml
+-rw-------@  1 christopherlittle  staff  339 Dec  5 16:49 eslint.config.js
+-rw-------@  1 christopherlittle  staff  241 Dec  5 16:49 file-a.ts
+-rw-------@  1 christopherlittle  staff  197 Dec  5 16:49 file-b.ts
 
 CMC.TOML CONTENTS
 -----------------

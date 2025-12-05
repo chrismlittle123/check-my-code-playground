@@ -4,24 +4,24 @@ CMC TEST OUTPUT
 
 METADATA
 --------
-Timestamp:    2025-12-05 11:25:54
+Timestamp:    2025-12-05 16:56:00
 Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/check/typescript/special-chars
 Command:      cmc context --target claude --stdout
 Description:  Generate Claude context (stdout)
 Exit Code:    2
-Duration:     .328476000s
-CMC Version:  1.2.0
+Duration:     .156725000s
+CMC Version:  1.4.0
 
 PROJECT FILES
 -------------
 total 40
-drwxr-xr-x@ 7 christopherlittle  staff  224  5 Dec 10:21 .
-drwxr-xr-x@ 8 christopherlittle  staff  256  5 Dec 10:21 ..
--rw-------@ 1 christopherlittle  staff   82  5 Dec 10:21 cmc.toml
--rw-------@ 1 christopherlittle  staff  221  5 Dec 10:21 eslint.config.js
--rw-------@ 1 christopherlittle  staff   60  5 Dec 10:21 file_with_underscores.ts
--rw-------@ 1 christopherlittle  staff   55  5 Dec 10:21 file-with-dashes.ts
--rw-------@ 1 christopherlittle  staff   62  5 Dec 10:21 file.multiple.dots.ts
+drwxr-xr-x@  7 christopherlittle  staff  224 Dec  5 16:49 .
+drwxr-xr-x@ 12 christopherlittle  staff  384 Dec  5 16:49 ..
+-rw-------@  1 christopherlittle  staff   82 Dec  5 16:49 cmc.toml
+-rw-------@  1 christopherlittle  staff  221 Dec  5 16:49 eslint.config.js
+-rw-------@  1 christopherlittle  staff   60 Dec  5 16:49 file_with_underscores.ts
+-rw-------@  1 christopherlittle  staff   55 Dec  5 16:49 file-with-dashes.ts
+-rw-------@  1 christopherlittle  staff   62 Dec  5 16:49 file.multiple.dots.ts
 
 CMC.TOML CONTENTS
 -----------------

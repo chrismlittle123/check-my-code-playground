@@ -4,20 +4,20 @@ CMC TEST OUTPUT
 
 METADATA
 --------
-Timestamp:    2025-12-05 11:26:23
+Timestamp:    2025-12-05 16:56:36
 Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/context/no-language/invalid-template
 Command:      cmc context --target cursor --stdout
 Description:  Generate Cursor context (stdout)
 Exit Code:    3
-Duration:     .949172000s
-CMC Version:  1.2.0
+Duration:     .682416000s
+CMC Version:  1.4.0
 
 PROJECT FILES
 -------------
 total 8
-drwxr-xr-x@ 3 christopherlittle  staff   96  5 Dec 10:21 .
-drwxr-xr-x@ 8 christopherlittle  staff  256  5 Dec 10:21 ..
--rw-------@ 1 christopherlittle  staff  139  5 Dec 10:21 cmc.toml
+drwxr-xr-x@ 3 christopherlittle  staff   96 Dec  5 16:49 .
+drwxr-xr-x@ 7 christopherlittle  staff  224 Dec  5 16:49 ..
+-rw-------@ 1 christopherlittle  staff  139 Dec  5 16:49 cmc.toml
 
 CMC.TOML CONTENTS
 -----------------

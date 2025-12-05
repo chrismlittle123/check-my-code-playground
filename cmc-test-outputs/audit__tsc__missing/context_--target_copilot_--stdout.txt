@@ -1,0 +1,41 @@
+================================================================================
+CMC TEST OUTPUT
+================================================================================
+
+METADATA
+--------
+Timestamp:    2025-12-05 16:55:11
+Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/audit/tsc/missing
+Command:      cmc context --target copilot --stdout
+Description:  Generate Copilot context (stdout)
+Exit Code:    2
+Duration:     .144475000s
+CMC Version:  1.4.0
+
+PROJECT FILES
+-------------
+total 8
+drwx------@ 3 christopherlittle  staff   96 Dec  5 16:49 .
+drwx------@ 5 christopherlittle  staff  160 Dec  5 16:49 ..
+-rw-------@ 1 christopherlittle  staff   72 Dec  5 16:49 cmc.toml
+
+CMC.TOML CONTENTS
+-----------------
+[project]
+name = "audit-tsc-missing-test"
+
+[rulesets.tsc]
+strict = true
+
+STDOUT
+------
+
+STDERR
+------
+Error: No prompts templates configured in cmc.toml.
+
+Add to your cmc.toml:
+  [prompts]
+  templates = ["typescript/5.5"]
+
+================================================================================

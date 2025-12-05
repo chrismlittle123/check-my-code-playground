@@ -1,0 +1,40 @@
+================================================================================
+CMC TEST OUTPUT
+================================================================================
+
+METADATA
+--------
+Timestamp:    2025-12-05 16:55:05
+Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/audit/tsc/mismatch
+Command:      cmc audit eslint
+Description:  Audit ESLint config only
+Exit Code:    0
+Duration:     .132403000s
+CMC Version:  1.4.0
+
+PROJECT FILES
+-------------
+total 16
+drwx------@ 4 christopherlittle  staff  128 Dec  5 16:49 .
+drwx------@ 5 christopherlittle  staff  160 Dec  5 16:49 ..
+-rw-------@ 1 christopherlittle  staff  130 Dec  5 16:49 cmc.toml
+-rw-------@ 1 christopherlittle  staff  213 Dec  5 16:49 tsconfig.json
+
+CMC.TOML CONTENTS
+-----------------
+[project]
+name = "audit-tsc-mismatch-test"
+
+[rulesets.tsc]
+strict = true
+noUncheckedIndexedAccess = true
+noImplicitReturns = true
+
+STDOUT
+------
+No linter configs to audit (no rulesets defined in cmc.toml)
+
+STDERR
+------
+
+================================================================================

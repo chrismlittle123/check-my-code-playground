@@ -1,0 +1,59 @@
+================================================================================
+CMC TEST OUTPUT
+================================================================================
+
+METADATA
+--------
+Timestamp:    2025-12-05 16:56:16
+Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/check/typescript/with-tsc-enabled
+Command:      cmc check --json
+Description:  Run linter checks with JSON output
+Exit Code:    1
+Duration:     1.743650000s
+CMC Version:  1.4.0
+
+PROJECT FILES
+-------------
+total 40
+drwxr-xr-x@  7 christopherlittle  staff  224 Dec  5 16:49 .
+drwxr-xr-x@ 12 christopherlittle  staff  384 Dec  5 16:49 ..
+-rw-r--r--@  1 christopherlittle  staff  153 Dec  5 16:49 clean.ts
+-rw-r--r--@  1 christopherlittle  staff  110 Dec  5 16:49 cmc.toml
+-rw-r--r--@  1 christopherlittle  staff  166 Dec  5 16:49 eslint.config.js
+-rw-r--r--@  1 christopherlittle  staff  173 Dec  5 16:49 tsconfig.json
+-rw-r--r--@  1 christopherlittle  staff  218 Dec  5 16:49 type-error.ts
+
+CMC.TOML CONTENTS
+-----------------
+[project]
+name = "tsc-enabled-test"
+
+[rulesets.tsc]
+strict = true
+
+[rulesets.eslint.rules]
+"no-var" = "error"
+
+STDOUT
+------
+{
+  "violations": [
+    {
+      "file": "type-error.ts",
+      "line": 8,
+      "column": 20,
+      "rule": "TS2345",
+      "message": "Argument of type 'string' is not assignable to parameter of type 'number'.",
+      "linter": "tsc"
+    }
+  ],
+  "summary": {
+    "files_checked": 2,
+    "violations_count": 1
+  }
+}
+
+STDERR
+------
+
+================================================================================

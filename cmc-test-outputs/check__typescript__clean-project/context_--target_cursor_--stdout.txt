@@ -1,0 +1,46 @@
+================================================================================
+CMC TEST OUTPUT
+================================================================================
+
+METADATA
+--------
+Timestamp:    2025-12-05 16:55:34
+Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/check/typescript/clean-project
+Command:      cmc context --target cursor --stdout
+Description:  Generate Cursor context (stdout)
+Exit Code:    2
+Duration:     .224413000s
+CMC Version:  1.4.0
+
+PROJECT FILES
+-------------
+total 32
+drwxr-xr-x@  6 christopherlittle  staff  192 Dec  5 16:49 .
+drwxr-xr-x@ 12 christopherlittle  staff  384 Dec  5 16:49 ..
+-rw-r--r--@  1 christopherlittle  staff  138 Dec  5 16:49 cmc.toml
+-rw-r--r--@  1 christopherlittle  staff  380 Dec  5 16:49 eslint.config.js
+-rw-r--r--@  1 christopherlittle  staff  193 Dec  5 16:49 main.ts
+-rw-r--r--@  1 christopherlittle  staff  147 Dec  5 16:49 utils.ts
+
+CMC.TOML CONTENTS
+-----------------
+[project]
+name = "clean-project-test"
+
+[rulesets.eslint.rules]
+"no-var" = "error"
+"prefer-const" = "error"
+"eqeqeq" = ["error", "always"]
+
+STDOUT
+------
+
+STDERR
+------
+Error: No prompts templates configured in cmc.toml.
+
+Add to your cmc.toml:
+  [prompts]
+  templates = ["typescript/5.5"]
+
+================================================================================

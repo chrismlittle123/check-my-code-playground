@@ -1,0 +1,43 @@
+================================================================================
+CMC TEST OUTPUT
+================================================================================
+
+METADATA
+--------
+Timestamp:    2025-12-05 16:57:21
+Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/registry/valid-registry
+Command:      cmc check --json
+Description:  Run linter checks with JSON output
+Exit Code:    0
+Duration:     .143525000s
+CMC Version:  1.4.0
+
+PROJECT FILES
+-------------
+total 8
+drwxr-xr-x@ 6 christopherlittle  staff  192 Dec  5 16:49 .
+drwxr-xr-x@ 4 christopherlittle  staff  128 Dec  5 16:49 ..
+-rw-------@ 1 christopherlittle  staff   33 Dec  5 16:49 cmc.toml
+drwxr-xr-x@ 4 christopherlittle  staff  128 Dec  5 16:49 prompts
+drwxr-xr-x@ 4 christopherlittle  staff  128 Dec  5 16:49 rulesets
+drwxr-xr-x@ 4 christopherlittle  staff  128 Dec  5 16:49 schemas
+
+CMC.TOML CONTENTS
+-----------------
+[project]
+name = "registry-test"
+
+STDOUT
+------
+{
+  "violations": [],
+  "summary": {
+    "files_checked": 0,
+    "violations_count": 0
+  }
+}
+
+STDERR
+------
+
+================================================================================

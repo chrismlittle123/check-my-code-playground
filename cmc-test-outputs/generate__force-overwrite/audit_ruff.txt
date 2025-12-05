@@ -1,0 +1,49 @@
+================================================================================
+CMC TEST OUTPUT
+================================================================================
+
+METADATA
+--------
+Timestamp:    2025-12-05 16:57:03
+Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/generate/force-overwrite
+Command:      cmc audit ruff
+Description:  Audit Ruff config only
+Exit Code:    1
+Duration:     .139322000s
+CMC Version:  1.4.0
+
+PROJECT FILES
+-------------
+total 24
+drwxr-xr-x@ 5 christopherlittle  staff  160 Dec  5 16:49 .
+drwxr-xr-x@ 7 christopherlittle  staff  224 Dec  5 16:49 ..
+-rw-r--r--@ 1 christopherlittle  staff  210 Dec  5 16:49 cmc.toml
+-rw-r--r--@ 1 christopherlittle  staff  106 Dec  5 16:49 eslint.config.js
+-rw-r--r--@ 1 christopherlittle  staff  102 Dec  5 16:49 ruff.toml
+
+CMC.TOML CONTENTS
+-----------------
+[project]
+name = "force-overwrite-test"
+
+[rulesets.eslint.rules]
+"no-var" = "error"
+"prefer-const" = "error"
+"eqeqeq" = "error"
+
+[rulesets.ruff]
+line-length = 120
+
+[rulesets.ruff.lint]
+select = ["E", "F", "I"]
+
+STDOUT
+------
+✗ ruff.toml has mismatches:
+  - different value: line-length (expected 120, got 80)
+  - missing rule: select = ["E","F","I"]
+
+STDERR
+------
+
+================================================================================

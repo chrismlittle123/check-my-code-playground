@@ -1,0 +1,47 @@
+================================================================================
+CMC TEST OUTPUT
+================================================================================
+
+METADATA
+--------
+Timestamp:    2025-12-05 16:57:34
+Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/validate/valid-full
+Command:      cmc audit ruff
+Description:  Audit Ruff config only
+Exit Code:    3
+Duration:     .151085000s
+CMC Version:  1.4.0
+
+PROJECT FILES
+-------------
+total 8
+drwxr-xr-x@ 3 christopherlittle  staff   96 Dec  5 16:49 .
+drwxr-xr-x@ 6 christopherlittle  staff  192 Dec  5 16:49 ..
+-rw-------@ 1 christopherlittle  staff  222 Dec  5 16:49 cmc.toml
+
+CMC.TOML CONTENTS
+-----------------
+[project]
+name = "full-project"
+
+[prompts]
+templates = ["typescript/5.5"]
+
+[rulesets.eslint.rules]
+"no-console" = "warn"
+"no-var" = "error"
+
+[rulesets.ruff]
+line-length = 100
+
+[rulesets.ruff.lint]
+select = ["E", "F", "I"]
+
+STDOUT
+------
+
+STDERR
+------
+Error: Linter config file not found: ruff.toml
+
+================================================================================

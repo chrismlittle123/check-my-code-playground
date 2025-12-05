@@ -2,31 +2,45 @@
 CMC TEST HARNESS - SUMMARY REPORT
 ================================================================================
 
-Generated: 2025-12-05 11:24:37
-CMC Version: 1.2.0
+Generated: 2025-12-05 16:55:00
+CMC Version: 1.4.0
 
 PROJECTS TESTED
 ---------------
+  - /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/audit/tsc/match
+  - /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/audit/tsc/mismatch
+  - /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/audit/tsc/missing
   - /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/check/config-errors/invalid-toml
   - /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/check/config-errors/missing-name
   - /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/check/python/default
   - /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/check/typescript-and-python/default
-  - /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/check/typescript-and-python/no-linters
+  - /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/check/typescript/clean-project
   - /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/check/typescript/default
   - /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/check/typescript/empty-project
   - /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/check/typescript/multi-violations
+  - /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/check/typescript/nested-dirs
   - /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/check/typescript/special-chars
-  - /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/check/typescript/subdirectory
   - /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/check/typescript/symlinks
+  - /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/check/typescript/with-ignored-dirs
+  - /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/check/typescript/with-tsc-enabled
+  - /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/check/typescript/without-tsc
   - /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/context/no-language/invalid-source
   - /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/context/no-language/invalid-template
   - /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/context/no-language/missing
   - /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/context/no-language/multiple
-  - /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/context/no-language/private-repo
   - /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/context/no-language/single
   - /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/generate/empty-ruleset
   - /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/generate/existing-config
+  - /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/generate/force-overwrite
   - /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/generate/fresh
+  - /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/generate/tsc/fresh
+  - /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/mcp-server/default
+  - /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/registry/invalid-registry
+  - /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/registry/valid-registry
+  - /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/validate/invalid-schema
+  - /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/validate/invalid-toml
+  - /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/validate/valid-full
+  - /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/validate/valid-minimal
   - /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/verify/typescript-and-python/empty-ruleset
   - /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/verify/typescript-and-python/malformed
   - /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/verify/typescript-and-python/match
@@ -58,6 +72,42 @@ COMMANDS TESTED
 
 RESULTS BY PROJECT
 ------------------
+
+/Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/audit/tsc/match:
+  [PASS] cmc check  -> check_.txt
+  [PASS] cmc check --json -> check_--json.txt
+  [PASS] cmc audit  -> audit_.txt
+  [PASS] cmc audit eslint -> audit_eslint.txt
+  [PASS] cmc audit ruff -> audit_ruff.txt
+  [PASS] cmc generate eslint --stdout -> generate_eslint_--stdout.txt
+  [PASS] cmc generate ruff --stdout -> generate_ruff_--stdout.txt
+  [FAIL] cmc context --target claude --stdout -> context_--target_claude_--stdout.txt
+  [FAIL] cmc context --target cursor --stdout -> context_--target_cursor_--stdout.txt
+  [FAIL] cmc context --target copilot --stdout -> context_--target_copilot_--stdout.txt
+
+/Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/audit/tsc/mismatch:
+  [PASS] cmc check  -> check_.txt
+  [PASS] cmc check --json -> check_--json.txt
+  [FAIL] cmc audit  -> audit_.txt
+  [PASS] cmc audit eslint -> audit_eslint.txt
+  [PASS] cmc audit ruff -> audit_ruff.txt
+  [PASS] cmc generate eslint --stdout -> generate_eslint_--stdout.txt
+  [PASS] cmc generate ruff --stdout -> generate_ruff_--stdout.txt
+  [FAIL] cmc context --target claude --stdout -> context_--target_claude_--stdout.txt
+  [FAIL] cmc context --target cursor --stdout -> context_--target_cursor_--stdout.txt
+  [FAIL] cmc context --target copilot --stdout -> context_--target_copilot_--stdout.txt
+
+/Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/audit/tsc/missing:
+  [PASS] cmc check  -> check_.txt
+  [PASS] cmc check --json -> check_--json.txt
+  [FAIL] cmc audit  -> audit_.txt
+  [PASS] cmc audit eslint -> audit_eslint.txt
+  [PASS] cmc audit ruff -> audit_ruff.txt
+  [PASS] cmc generate eslint --stdout -> generate_eslint_--stdout.txt
+  [PASS] cmc generate ruff --stdout -> generate_ruff_--stdout.txt
+  [FAIL] cmc context --target claude --stdout -> context_--target_claude_--stdout.txt
+  [FAIL] cmc context --target cursor --stdout -> context_--target_cursor_--stdout.txt
+  [FAIL] cmc context --target copilot --stdout -> context_--target_copilot_--stdout.txt
 
 /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/check/config-errors/invalid-toml:
   [FAIL] cmc check  -> check_.txt
@@ -107,12 +157,12 @@ RESULTS BY PROJECT
   [FAIL] cmc context --target cursor --stdout -> context_--target_cursor_--stdout.txt
   [FAIL] cmc context --target copilot --stdout -> context_--target_copilot_--stdout.txt
 
-/Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/check/typescript-and-python/no-linters:
-  [FAIL] cmc check  -> check_.txt
-  [FAIL] cmc check --json -> check_--json.txt
-  [FAIL] cmc audit  -> audit_.txt
-  [FAIL] cmc audit eslint -> audit_eslint.txt
-  [FAIL] cmc audit ruff -> audit_ruff.txt
+/Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/check/typescript/clean-project:
+  [PASS] cmc check  -> check_.txt
+  [PASS] cmc check --json -> check_--json.txt
+  [PASS] cmc audit  -> audit_.txt
+  [PASS] cmc audit eslint -> audit_eslint.txt
+  [PASS] cmc audit ruff -> audit_ruff.txt
   [PASS] cmc generate eslint --stdout -> generate_eslint_--stdout.txt
   [PASS] cmc generate ruff --stdout -> generate_ruff_--stdout.txt
   [FAIL] cmc context --target claude --stdout -> context_--target_claude_--stdout.txt
@@ -123,7 +173,7 @@ RESULTS BY PROJECT
   [FAIL] cmc check  -> check_.txt
   [FAIL] cmc check --json -> check_--json.txt
   [FAIL] cmc audit  -> audit_.txt
-  [FAIL] cmc audit eslint -> audit_eslint.txt
+  [PASS] cmc audit eslint -> audit_eslint.txt
   [FAIL] cmc audit ruff -> audit_ruff.txt
   [PASS] cmc generate eslint --stdout -> generate_eslint_--stdout.txt
   [PASS] cmc generate ruff --stdout -> generate_ruff_--stdout.txt
@@ -155,6 +205,18 @@ RESULTS BY PROJECT
   [FAIL] cmc context --target cursor --stdout -> context_--target_cursor_--stdout.txt
   [FAIL] cmc context --target copilot --stdout -> context_--target_copilot_--stdout.txt
 
+/Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/check/typescript/nested-dirs:
+  [FAIL] cmc check  -> check_.txt
+  [FAIL] cmc check --json -> check_--json.txt
+  [PASS] cmc audit  -> audit_.txt
+  [PASS] cmc audit eslint -> audit_eslint.txt
+  [PASS] cmc audit ruff -> audit_ruff.txt
+  [PASS] cmc generate eslint --stdout -> generate_eslint_--stdout.txt
+  [PASS] cmc generate ruff --stdout -> generate_ruff_--stdout.txt
+  [FAIL] cmc context --target claude --stdout -> context_--target_claude_--stdout.txt
+  [FAIL] cmc context --target cursor --stdout -> context_--target_cursor_--stdout.txt
+  [FAIL] cmc context --target copilot --stdout -> context_--target_copilot_--stdout.txt
+
 /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/check/typescript/special-chars:
   [FAIL] cmc check  -> check_.txt
   [FAIL] cmc check --json -> check_--json.txt
@@ -167,7 +229,19 @@ RESULTS BY PROJECT
   [FAIL] cmc context --target cursor --stdout -> context_--target_cursor_--stdout.txt
   [FAIL] cmc context --target copilot --stdout -> context_--target_copilot_--stdout.txt
 
-/Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/check/typescript/subdirectory:
+/Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/check/typescript/symlinks:
+  [FAIL] cmc check  -> check_.txt
+  [FAIL] cmc check --json -> check_--json.txt
+  [PASS] cmc audit  -> audit_.txt
+  [PASS] cmc audit eslint -> audit_eslint.txt
+  [PASS] cmc audit ruff -> audit_ruff.txt
+  [PASS] cmc generate eslint --stdout -> generate_eslint_--stdout.txt
+  [PASS] cmc generate ruff --stdout -> generate_ruff_--stdout.txt
+  [FAIL] cmc context --target claude --stdout -> context_--target_claude_--stdout.txt
+  [FAIL] cmc context --target cursor --stdout -> context_--target_cursor_--stdout.txt
+  [FAIL] cmc context --target copilot --stdout -> context_--target_copilot_--stdout.txt
+
+/Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/check/typescript/with-ignored-dirs:
   [PASS] cmc check  -> check_.txt
   [PASS] cmc check --json -> check_--json.txt
   [PASS] cmc audit  -> audit_.txt
@@ -179,9 +253,21 @@ RESULTS BY PROJECT
   [FAIL] cmc context --target cursor --stdout -> context_--target_cursor_--stdout.txt
   [FAIL] cmc context --target copilot --stdout -> context_--target_copilot_--stdout.txt
 
-/Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/check/typescript/symlinks:
+/Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/check/typescript/with-tsc-enabled:
   [FAIL] cmc check  -> check_.txt
   [FAIL] cmc check --json -> check_--json.txt
+  [PASS] cmc audit  -> audit_.txt
+  [PASS] cmc audit eslint -> audit_eslint.txt
+  [PASS] cmc audit ruff -> audit_ruff.txt
+  [PASS] cmc generate eslint --stdout -> generate_eslint_--stdout.txt
+  [PASS] cmc generate ruff --stdout -> generate_ruff_--stdout.txt
+  [FAIL] cmc context --target claude --stdout -> context_--target_claude_--stdout.txt
+  [FAIL] cmc context --target cursor --stdout -> context_--target_cursor_--stdout.txt
+  [FAIL] cmc context --target copilot --stdout -> context_--target_copilot_--stdout.txt
+
+/Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/check/typescript/without-tsc:
+  [PASS] cmc check  -> check_.txt
+  [PASS] cmc check --json -> check_--json.txt
   [PASS] cmc audit  -> audit_.txt
   [PASS] cmc audit eslint -> audit_eslint.txt
   [PASS] cmc audit ruff -> audit_ruff.txt
@@ -239,18 +325,6 @@ RESULTS BY PROJECT
   [PASS] cmc context --target cursor --stdout -> context_--target_cursor_--stdout.txt
   [PASS] cmc context --target copilot --stdout -> context_--target_copilot_--stdout.txt
 
-/Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/context/no-language/private-repo:
-  [PASS] cmc check  -> check_.txt
-  [PASS] cmc check --json -> check_--json.txt
-  [PASS] cmc audit  -> audit_.txt
-  [PASS] cmc audit eslint -> audit_eslint.txt
-  [PASS] cmc audit ruff -> audit_ruff.txt
-  [PASS] cmc generate eslint --stdout -> generate_eslint_--stdout.txt
-  [PASS] cmc generate ruff --stdout -> generate_ruff_--stdout.txt
-  [FAIL] cmc context --target claude --stdout -> context_--target_claude_--stdout.txt
-  [FAIL] cmc context --target cursor --stdout -> context_--target_cursor_--stdout.txt
-  [FAIL] cmc context --target copilot --stdout -> context_--target_copilot_--stdout.txt
-
 /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/context/no-language/single:
   [PASS] cmc check  -> check_.txt
   [PASS] cmc check --json -> check_--json.txt
@@ -279,6 +353,18 @@ RESULTS BY PROJECT
   [PASS] cmc check  -> check_.txt
   [PASS] cmc check --json -> check_--json.txt
   [FAIL] cmc audit  -> audit_.txt
+  [PASS] cmc audit eslint -> audit_eslint.txt
+  [FAIL] cmc audit ruff -> audit_ruff.txt
+  [PASS] cmc generate eslint --stdout -> generate_eslint_--stdout.txt
+  [PASS] cmc generate ruff --stdout -> generate_ruff_--stdout.txt
+  [FAIL] cmc context --target claude --stdout -> context_--target_claude_--stdout.txt
+  [FAIL] cmc context --target cursor --stdout -> context_--target_cursor_--stdout.txt
+  [FAIL] cmc context --target copilot --stdout -> context_--target_copilot_--stdout.txt
+
+/Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/generate/force-overwrite:
+  [PASS] cmc check  -> check_.txt
+  [PASS] cmc check --json -> check_--json.txt
+  [FAIL] cmc audit  -> audit_.txt
   [FAIL] cmc audit eslint -> audit_eslint.txt
   [FAIL] cmc audit ruff -> audit_ruff.txt
   [PASS] cmc generate eslint --stdout -> generate_eslint_--stdout.txt
@@ -293,6 +379,102 @@ RESULTS BY PROJECT
   [FAIL] cmc audit  -> audit_.txt
   [FAIL] cmc audit eslint -> audit_eslint.txt
   [FAIL] cmc audit ruff -> audit_ruff.txt
+  [PASS] cmc generate eslint --stdout -> generate_eslint_--stdout.txt
+  [PASS] cmc generate ruff --stdout -> generate_ruff_--stdout.txt
+  [FAIL] cmc context --target claude --stdout -> context_--target_claude_--stdout.txt
+  [FAIL] cmc context --target cursor --stdout -> context_--target_cursor_--stdout.txt
+  [FAIL] cmc context --target copilot --stdout -> context_--target_copilot_--stdout.txt
+
+/Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/generate/tsc/fresh:
+  [PASS] cmc check  -> check_.txt
+  [PASS] cmc check --json -> check_--json.txt
+  [FAIL] cmc audit  -> audit_.txt
+  [PASS] cmc audit eslint -> audit_eslint.txt
+  [PASS] cmc audit ruff -> audit_ruff.txt
+  [PASS] cmc generate eslint --stdout -> generate_eslint_--stdout.txt
+  [PASS] cmc generate ruff --stdout -> generate_ruff_--stdout.txt
+  [FAIL] cmc context --target claude --stdout -> context_--target_claude_--stdout.txt
+  [FAIL] cmc context --target cursor --stdout -> context_--target_cursor_--stdout.txt
+  [FAIL] cmc context --target copilot --stdout -> context_--target_copilot_--stdout.txt
+
+/Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/mcp-server/default:
+  [FAIL] cmc check  -> check_.txt
+  [FAIL] cmc check --json -> check_--json.txt
+  [PASS] cmc audit  -> audit_.txt
+  [PASS] cmc audit eslint -> audit_eslint.txt
+  [PASS] cmc audit ruff -> audit_ruff.txt
+  [PASS] cmc generate eslint --stdout -> generate_eslint_--stdout.txt
+  [PASS] cmc generate ruff --stdout -> generate_ruff_--stdout.txt
+  [FAIL] cmc context --target claude --stdout -> context_--target_claude_--stdout.txt
+  [FAIL] cmc context --target cursor --stdout -> context_--target_cursor_--stdout.txt
+  [FAIL] cmc context --target copilot --stdout -> context_--target_copilot_--stdout.txt
+
+/Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/registry/invalid-registry:
+  [PASS] cmc check  -> check_.txt
+  [PASS] cmc check --json -> check_--json.txt
+  [PASS] cmc audit  -> audit_.txt
+  [PASS] cmc audit eslint -> audit_eslint.txt
+  [PASS] cmc audit ruff -> audit_ruff.txt
+  [PASS] cmc generate eslint --stdout -> generate_eslint_--stdout.txt
+  [PASS] cmc generate ruff --stdout -> generate_ruff_--stdout.txt
+  [FAIL] cmc context --target claude --stdout -> context_--target_claude_--stdout.txt
+  [FAIL] cmc context --target cursor --stdout -> context_--target_cursor_--stdout.txt
+  [FAIL] cmc context --target copilot --stdout -> context_--target_copilot_--stdout.txt
+
+/Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/registry/valid-registry:
+  [PASS] cmc check  -> check_.txt
+  [PASS] cmc check --json -> check_--json.txt
+  [PASS] cmc audit  -> audit_.txt
+  [PASS] cmc audit eslint -> audit_eslint.txt
+  [PASS] cmc audit ruff -> audit_ruff.txt
+  [PASS] cmc generate eslint --stdout -> generate_eslint_--stdout.txt
+  [PASS] cmc generate ruff --stdout -> generate_ruff_--stdout.txt
+  [FAIL] cmc context --target claude --stdout -> context_--target_claude_--stdout.txt
+  [FAIL] cmc context --target cursor --stdout -> context_--target_cursor_--stdout.txt
+  [FAIL] cmc context --target copilot --stdout -> context_--target_copilot_--stdout.txt
+
+/Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/validate/invalid-schema:
+  [FAIL] cmc check  -> check_.txt
+  [FAIL] cmc check --json -> check_--json.txt
+  [FAIL] cmc audit  -> audit_.txt
+  [FAIL] cmc audit eslint -> audit_eslint.txt
+  [FAIL] cmc audit ruff -> audit_ruff.txt
+  [FAIL] cmc generate eslint --stdout -> generate_eslint_--stdout.txt
+  [FAIL] cmc generate ruff --stdout -> generate_ruff_--stdout.txt
+  [FAIL] cmc context --target claude --stdout -> context_--target_claude_--stdout.txt
+  [FAIL] cmc context --target cursor --stdout -> context_--target_cursor_--stdout.txt
+  [FAIL] cmc context --target copilot --stdout -> context_--target_copilot_--stdout.txt
+
+/Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/validate/invalid-toml:
+  [FAIL] cmc check  -> check_.txt
+  [FAIL] cmc check --json -> check_--json.txt
+  [FAIL] cmc audit  -> audit_.txt
+  [FAIL] cmc audit eslint -> audit_eslint.txt
+  [FAIL] cmc audit ruff -> audit_ruff.txt
+  [FAIL] cmc generate eslint --stdout -> generate_eslint_--stdout.txt
+  [FAIL] cmc generate ruff --stdout -> generate_ruff_--stdout.txt
+  [FAIL] cmc context --target claude --stdout -> context_--target_claude_--stdout.txt
+  [FAIL] cmc context --target cursor --stdout -> context_--target_cursor_--stdout.txt
+  [FAIL] cmc context --target copilot --stdout -> context_--target_copilot_--stdout.txt
+
+/Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/validate/valid-full:
+  [PASS] cmc check  -> check_.txt
+  [PASS] cmc check --json -> check_--json.txt
+  [FAIL] cmc audit  -> audit_.txt
+  [FAIL] cmc audit eslint -> audit_eslint.txt
+  [FAIL] cmc audit ruff -> audit_ruff.txt
+  [PASS] cmc generate eslint --stdout -> generate_eslint_--stdout.txt
+  [PASS] cmc generate ruff --stdout -> generate_ruff_--stdout.txt
+  [PASS] cmc context --target claude --stdout -> context_--target_claude_--stdout.txt
+  [PASS] cmc context --target cursor --stdout -> context_--target_cursor_--stdout.txt
+  [PASS] cmc context --target copilot --stdout -> context_--target_copilot_--stdout.txt
+
+/Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/validate/valid-minimal:
+  [PASS] cmc check  -> check_.txt
+  [PASS] cmc check --json -> check_--json.txt
+  [PASS] cmc audit  -> audit_.txt
+  [PASS] cmc audit eslint -> audit_eslint.txt
+  [PASS] cmc audit ruff -> audit_ruff.txt
   [PASS] cmc generate eslint --stdout -> generate_eslint_--stdout.txt
   [PASS] cmc generate ruff --stdout -> generate_ruff_--stdout.txt
   [FAIL] cmc context --target claude --stdout -> context_--target_claude_--stdout.txt
@@ -362,10 +544,10 @@ RESULTS BY PROJECT
 ================================================================================
 FINAL STATISTICS
 ================================================================================
-Total Tests:  250
-Passed:       128
-Failed:       122
-Pass Rate:    51.2%
+Total Tests:  390
+Passed:       207
+Failed:       183
+Pass Rate:    53.0%
 
 Output Location: /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/cmc-test-outputs
 ================================================================================

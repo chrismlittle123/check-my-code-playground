@@ -1,0 +1,34 @@
+================================================================================
+CMC TEST OUTPUT
+================================================================================
+
+METADATA
+--------
+Timestamp:    2025-12-05 16:57:39
+Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/validate/valid-minimal
+Command:      cmc audit eslint
+Description:  Audit ESLint config only
+Exit Code:    0
+Duration:     .186690000s
+CMC Version:  1.4.0
+
+PROJECT FILES
+-------------
+total 8
+drwxr-xr-x@ 3 christopherlittle  staff   96 Dec  5 16:49 .
+drwxr-xr-x@ 6 christopherlittle  staff  192 Dec  5 16:49 ..
+-rw-------@ 1 christopherlittle  staff   35 Dec  5 16:49 cmc.toml
+
+CMC.TOML CONTENTS
+-----------------
+[project]
+name = "minimal-project"
+
+STDOUT
+------
+No linter configs to audit (no rulesets defined in cmc.toml)
+
+STDERR
+------
+
+================================================================================

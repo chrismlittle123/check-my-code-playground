@@ -4,20 +4,20 @@ CMC TEST OUTPUT
 
 METADATA
 --------
-Timestamp:    2025-12-05 11:24:47
+Timestamp:    2025-12-05 16:55:15
 Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/check/config-errors/missing-name
 Command:      cmc audit eslint
 Description:  Audit ESLint config only
 Exit Code:    2
-Duration:     .180570000s
-CMC Version:  1.2.0
+Duration:     .137684000s
+CMC Version:  1.4.0
 
 PROJECT FILES
 -------------
 total 8
-drwxr-xr-x@ 3 christopherlittle  staff   96  5 Dec 10:21 .
-drwxr-xr-x@ 4 christopherlittle  staff  128  5 Dec 10:21 ..
--rw-------@ 1 christopherlittle  staff  126  5 Dec 10:21 cmc.toml
+drwxr-xr-x@ 3 christopherlittle  staff   96 Dec  5 16:49 .
+drwxr-xr-x@ 5 christopherlittle  staff  160 Dec  5 16:49 ..
+-rw-------@ 1 christopherlittle  staff  126 Dec  5 16:49 cmc.toml
 
 CMC.TOML CONTENTS
 -----------------

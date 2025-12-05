@@ -4,22 +4,22 @@ CMC TEST OUTPUT
 
 METADATA
 --------
-Timestamp:    2025-12-05 11:26:08
+Timestamp:    2025-12-05 16:56:06
 Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/check/typescript/symlinks
 Command:      cmc context --target cursor --stdout
 Description:  Generate Cursor context (stdout)
 Exit Code:    2
-Duration:     .266042000s
-CMC Version:  1.2.0
+Duration:     .229884000s
+CMC Version:  1.4.0
 
 PROJECT FILES
 -------------
 total 24
-drwxr-xr-x@ 5 christopherlittle  staff  160  5 Dec 10:21 .
-drwxr-xr-x@ 8 christopherlittle  staff  256  5 Dec 10:21 ..
--rw-------@ 1 christopherlittle  staff   59  5 Dec 10:21 actual.ts
--rw-------@ 1 christopherlittle  staff   77  5 Dec 10:21 cmc.toml
--rw-------@ 1 christopherlittle  staff  221  5 Dec 10:21 eslint.config.js
+drwxr-xr-x@  5 christopherlittle  staff  160 Dec  5 16:49 .
+drwxr-xr-x@ 12 christopherlittle  staff  384 Dec  5 16:49 ..
+-rw-------@  1 christopherlittle  staff   59 Dec  5 16:49 actual.ts
+-rw-------@  1 christopherlittle  staff   77 Dec  5 16:49 cmc.toml
+-rw-------@  1 christopherlittle  staff  221 Dec  5 16:49 eslint.config.js
 
 CMC.TOML CONTENTS
 -----------------

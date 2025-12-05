@@ -4,27 +4,27 @@ CMC TEST OUTPUT
 
 METADATA
 --------
-Timestamp:    2025-12-05 11:25:07
+Timestamp:    2025-12-05 16:55:25
 Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/check/typescript-and-python/default
 Command:      cmc audit ruff
 Description:  Audit Ruff config only
 Exit Code:    0
-Duration:     .202857000s
-CMC Version:  1.2.0
+Duration:     .150423000s
+CMC Version:  1.4.0
 
 PROJECT FILES
 -------------
 total 56
-drwxr-xr-x@ 10 christopherlittle  staff  320  5 Dec 10:27 .
-drwxr-xr-x@  4 christopherlittle  staff  128  5 Dec 10:21 ..
-drwxr-xr-x@  5 christopherlittle  staff  160  5 Dec 10:27 .ruff_cache
--rw-------@  1 christopherlittle  staff  102  5 Dec 10:21 clean.py
--rw-------@  1 christopherlittle  staff   72  5 Dec 10:21 clean.ts
--rw-------@  1 christopherlittle  staff  150  5 Dec 10:21 cmc.toml
--rw-------@  1 christopherlittle  staff  205  5 Dec 10:21 eslint.config.js
--rw-------@  1 christopherlittle  staff   46  5 Dec 10:21 ruff.toml
--rw-------@  1 christopherlittle  staff   79  5 Dec 10:21 violation.py
--rw-------@  1 christopherlittle  staff   82  5 Dec 10:21 violation.ts
+drwxr-xr-x@ 10 christopherlittle  staff  320 Dec  5 16:55 .
+drwxr-xr-x@  3 christopherlittle  staff   96 Dec  5 16:49 ..
+drwxr-xr-x@  5 christopherlittle  staff  160 Dec  5 16:55 .ruff_cache
+-rw-------@  1 christopherlittle  staff  102 Dec  5 16:49 clean.py
+-rw-------@  1 christopherlittle  staff   72 Dec  5 16:49 clean.ts
+-rw-------@  1 christopherlittle  staff  150 Dec  5 16:49 cmc.toml
+-rw-------@  1 christopherlittle  staff  205 Dec  5 16:49 eslint.config.js
+-rw-------@  1 christopherlittle  staff   46 Dec  5 16:49 ruff.toml
+-rw-------@  1 christopherlittle  staff   79 Dec  5 16:49 violation.py
+-rw-------@  1 christopherlittle  staff   82 Dec  5 16:49 violation.ts
 
 CMC.TOML CONTENTS
 -----------------

@@ -1,0 +1,37 @@
+================================================================================
+CMC TEST OUTPUT
+================================================================================
+
+METADATA
+--------
+Timestamp:    2025-12-05 16:55:09
+Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/audit/tsc/missing
+Command:      cmc audit eslint
+Description:  Audit ESLint config only
+Exit Code:    0
+Duration:     .142163000s
+CMC Version:  1.4.0
+
+PROJECT FILES
+-------------
+total 8
+drwx------@ 3 christopherlittle  staff   96 Dec  5 16:49 .
+drwx------@ 5 christopherlittle  staff  160 Dec  5 16:49 ..
+-rw-------@ 1 christopherlittle  staff   72 Dec  5 16:49 cmc.toml
+
+CMC.TOML CONTENTS
+-----------------
+[project]
+name = "audit-tsc-missing-test"
+
+[rulesets.tsc]
+strict = true
+
+STDOUT
+------
+No linter configs to audit (no rulesets defined in cmc.toml)
+
+STDERR
+------
+
+================================================================================

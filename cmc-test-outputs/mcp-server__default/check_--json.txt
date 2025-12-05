@@ -1,0 +1,88 @@
+================================================================================
+CMC TEST OUTPUT
+================================================================================
+
+METADATA
+--------
+Timestamp:    2025-12-05 16:57:13
+Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/mcp-server/default
+Command:      cmc check --json
+Description:  Run linter checks with JSON output
+Exit Code:    1
+Duration:     .887836000s
+CMC Version:  1.4.0
+
+PROJECT FILES
+-------------
+total 48
+drwxr-xr-x@ 9 christopherlittle  staff  288 Dec  5 16:57 .
+drwxr-xr-x@ 3 christopherlittle  staff   96 Dec  5 16:49 ..
+drwxr-xr-x@ 5 christopherlittle  staff  160 Dec  5 16:57 .ruff_cache
+-rw-------@ 1 christopherlittle  staff  141 Dec  5 16:49 clean.ts
+-rw-------@ 1 christopherlittle  staff  175 Dec  5 16:49 cmc.toml
+-rw-------@ 1 christopherlittle  staff  232 Dec  5 16:49 eslint.config.js
+-rw-------@ 1 christopherlittle  staff   46 Dec  5 16:49 ruff.toml
+-rw-------@ 1 christopherlittle  staff  143 Dec  5 16:49 violation.py
+-rw-------@ 1 christopherlittle  staff  150 Dec  5 16:49 violation.ts
+
+CMC.TOML CONTENTS
+-----------------
+[project]
+name = "mcp-test-project"
+
+[rulesets.eslint.rules]
+"no-var" = "error"
+"eqeqeq" = "error"
+
+[rulesets.ruff]
+line-length = 100
+[rulesets.ruff.lint]
+select = ["F", "E"]
+
+STDOUT
+------
+{
+  "violations": [
+    {
+      "file": "violation.py",
+      "line": 2,
+      "column": 8,
+      "rule": "F401",
+      "message": "`os` imported but unused",
+      "linter": "ruff"
+    },
+    {
+      "file": "violation.py",
+      "line": 3,
+      "column": 8,
+      "rule": "F401",
+      "message": "`sys` imported but unused",
+      "linter": "ruff"
+    },
+    {
+      "file": "violation.ts",
+      "line": 2,
+      "column": 1,
+      "rule": "no-var",
+      "message": "Unexpected var, use let or const instead.",
+      "linter": "eslint"
+    },
+    {
+      "file": "violation.ts",
+      "line": 4,
+      "column": 17,
+      "rule": "eqeqeq",
+      "message": "Expected '===' and instead saw '=='.",
+      "linter": "eslint"
+    }
+  ],
+  "summary": {
+    "files_checked": 3,
+    "violations_count": 4
+  }
+}
+
+STDERR
+------
+
+================================================================================

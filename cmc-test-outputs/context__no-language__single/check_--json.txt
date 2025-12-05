@@ -4,20 +4,22 @@ CMC TEST OUTPUT
 
 METADATA
 --------
-Timestamp:    2025-12-05 11:26:46
+Timestamp:    2025-12-05 16:56:49
 Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/context/no-language/single
 Command:      cmc check --json
 Description:  Run linter checks with JSON output
 Exit Code:    0
-Duration:     .253756000s
-CMC Version:  1.2.0
+Duration:     .152660000s
+CMC Version:  1.4.0
 
 PROJECT FILES
 -------------
-total 8
-drwx------@ 3 christopherlittle  staff   96  5 Dec 10:21 .
-drwxr-xr-x@ 8 christopherlittle  staff  256  5 Dec 10:21 ..
--rw-------@ 1 christopherlittle  staff   74  5 Dec 10:21 cmc.toml
+total 40
+drwx------@ 5 christopherlittle  staff   160 Dec  5 16:49 .
+drwxr-xr-x@ 7 christopherlittle  staff   224 Dec  5 16:49 ..
+-rw-r--r--@ 1 christopherlittle  staff  5253 Dec  5 16:49 .cursorrules
+-rw-r--r--@ 1 christopherlittle  staff  5252 Dec  5 16:49 CLAUDE.md
+-rw-------@ 1 christopherlittle  staff    74 Dec  5 16:49 cmc.toml
 
 CMC.TOML CONTENTS
 -----------------
