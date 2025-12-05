@@ -1,0 +1,38 @@
+================================================================================
+CMC TEST OUTPUT
+================================================================================
+
+METADATA
+--------
+Timestamp:    2025-12-05 10:32:32
+Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/context/no-language/missing
+Command:      cmc context --target copilot --stdout
+Description:  Generate Copilot context (stdout)
+Exit Code:    2
+Duration:     .162262000s
+CMC Version:  1.2.0
+
+PROJECT FILES
+-------------
+total 8
+drwx------@ 3 christopherlittle  staff   96  5 Dec 10:21 .
+drwxr-xr-x@ 8 christopherlittle  staff  256  5 Dec 10:21 ..
+-rw-------@ 1 christopherlittle  staff   40  5 Dec 10:21 cmc.toml
+
+CMC.TOML CONTENTS
+-----------------
+[project]
+name = "context-missing-test"
+
+STDOUT
+------
+
+STDERR
+------
+Error: No prompts templates configured in cmc.toml.
+
+Add to your cmc.toml:
+  [prompts]
+  templates = ["typescript/5.5"]
+
+================================================================================

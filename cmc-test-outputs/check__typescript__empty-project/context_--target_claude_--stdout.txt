@@ -1,0 +1,42 @@
+================================================================================
+CMC TEST OUTPUT
+================================================================================
+
+METADATA
+--------
+Timestamp:    2025-12-05 10:27:18
+Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/check/typescript/empty-project
+Command:      cmc context --target claude --stdout
+Description:  Generate Claude context (stdout)
+Exit Code:    2
+Duration:     .153291000s
+CMC Version:  1.2.0
+
+PROJECT FILES
+-------------
+total 16
+drwxr-xr-x@ 4 christopherlittle  staff  128  5 Dec 10:21 .
+drwxr-xr-x@ 8 christopherlittle  staff  256  5 Dec 10:21 ..
+-rw-------@ 1 christopherlittle  staff   82  5 Dec 10:21 cmc.toml
+-rw-------@ 1 christopherlittle  staff   96  5 Dec 10:21 README.md
+
+CMC.TOML CONTENTS
+-----------------
+[project]
+name = "empty-project-test"
+
+[rulesets.eslint.rules]
+"no-var" = "error"
+
+STDOUT
+------
+
+STDERR
+------
+Error: No prompts templates configured in cmc.toml.
+
+Add to your cmc.toml:
+  [prompts]
+  templates = ["typescript/5.5"]
+
+================================================================================

@@ -1,0 +1,39 @@
+================================================================================
+CMC TEST OUTPUT
+================================================================================
+
+METADATA
+--------
+Timestamp:    2025-12-05 10:32:44
+Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/context/no-language/private-repo
+Command:      cmc check 
+Description:  Run linter checks on entire project
+Exit Code:    0
+Duration:     .180079000s
+CMC Version:  1.2.0
+
+PROJECT FILES
+-------------
+total 8
+drwxr-xr-x@ 3 christopherlittle  staff   96  5 Dec 10:21 .
+drwxr-xr-x@ 8 christopherlittle  staff  256  5 Dec 10:21 ..
+-rw-r--r--@ 1 christopherlittle  staff  196  5 Dec 10:21 cmc.toml
+
+CMC.TOML CONTENTS
+-----------------
+[project]
+name = "private-repo-test"
+
+[prompts]
+# Uses private repo - requires SSH key access
+templates = ["typescript/5.5"]
+source = "github:chrismlittle123/check-my-code-private/prompts@latest"
+
+STDOUT
+------
+✓ No violations found (0 files checked)
+
+STDERR
+------
+
+================================================================================

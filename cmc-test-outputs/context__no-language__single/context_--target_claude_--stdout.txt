@@ -1,0 +1,88 @@
+================================================================================
+CMC TEST OUTPUT
+================================================================================
+
+METADATA
+--------
+Timestamp:    2025-12-05 10:32:54
+Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/context/no-language/single
+Command:      cmc context --target claude --stdout
+Description:  Generate Claude context (stdout)
+Exit Code:    0
+Duration:     1.100374000s
+CMC Version:  1.2.0
+
+PROJECT FILES
+-------------
+total 8
+drwx------@ 3 christopherlittle  staff   96  5 Dec 10:21 .
+drwxr-xr-x@ 8 christopherlittle  staff  256  5 Dec 10:21 ..
+-rw-------@ 1 christopherlittle  staff   74  5 Dec 10:21 cmc.toml
+
+CMC.TOML CONTENTS
+-----------------
+[project]
+name = "context-test"
+
+[prompts]
+templates = ["typescript/5.5"]
+
+STDOUT
+------
+## TypeScript 5.5 Coding Standards
+
+You MUST follow these TypeScript 5.5 coding standards when writing or modifying code:
+
+### Target Version
+
+- Target TypeScript 5.5 specifically.
+- Target Node.js 20 runtime.
+- Use TypeScript 5.5 features where appropriate.
+
+### Variable Declarations
+
+- NEVER use `var`. Always use `const` for values that won't be reassigned, or `let` when reassignment is necessary.
+- Prefer `const` over `let` whenever possible.
+
+### Type Safety
+
+- NEVER use `any` type. Use `unknown` if the type is truly unknown, then narrow it with type guards.
+- Always provide explicit return types for functions.
+- Use strict null checks - handle `null` and `undefined` explicitly.
+- Enable `strict: true` in tsconfig.json.
+
+### TypeScript 5.5 Features
+
+- Use inferred type predicates for cleaner type narrowing.
+- Use `const` type parameters where appropriate.
+- Use `satisfies` operator for type validation without widening.
+- Use `using` declarations for resource management (Explicit Resource Management).
+- Use `import type` and `export type` for type-only imports/exports.
+
+### Equality
+
+- ALWAYS use strict equality (`===` and `!==`). Never use loose equality (`==` and `!=`).
+
+### Error Handling
+
+- Always handle errors explicitly. Never swallow errors silently.
+- Use typed error handling where possible.
+- Prefer `unknown` over `any` in catch clauses.
+
+### Imports
+
+- Use ES module imports (`import`/`export`), not CommonJS (`require`/`module.exports`).
+- Sort imports: external dependencies first, then internal modules.
+- Use `import type` for type-only imports.
+
+### Node.js 20
+
+- Use native fetch API (no need for node-fetch).
+- Use native test runner where appropriate.
+- Use ES modules (`"type": "module"` in package.json).
+
+
+STDERR
+------
+
+================================================================================

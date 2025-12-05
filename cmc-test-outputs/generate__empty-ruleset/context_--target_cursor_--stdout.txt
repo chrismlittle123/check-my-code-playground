@@ -1,0 +1,40 @@
+================================================================================
+CMC TEST OUTPUT
+================================================================================
+
+METADATA
+--------
+Timestamp:    2025-12-05 10:33:00
+Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/generate/empty-ruleset
+Command:      cmc context --target cursor --stdout
+Description:  Generate Cursor context (stdout)
+Exit Code:    2
+Duration:     .190966000s
+CMC Version:  1.2.0
+
+PROJECT FILES
+-------------
+total 8
+drwxr-xr-x@ 3 christopherlittle  staff   96  5 Dec 10:21 .
+drwxr-xr-x@ 5 christopherlittle  staff  160  5 Dec 10:21 ..
+-rw-------@ 1 christopherlittle  staff   76  5 Dec 10:21 cmc.toml
+
+CMC.TOML CONTENTS
+-----------------
+[project]
+name = "empty-ruleset-test"
+
+# No rulesets defined - empty config
+
+STDOUT
+------
+
+STDERR
+------
+Error: No prompts templates configured in cmc.toml.
+
+Add to your cmc.toml:
+  [prompts]
+  templates = ["typescript/5.5"]
+
+================================================================================

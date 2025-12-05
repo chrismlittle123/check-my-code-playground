@@ -1,0 +1,5 @@
+[project]
+name = "context-multiple-test"
+
+[prompts]
+templates = ["typescript/5.5", "python/3.12"]

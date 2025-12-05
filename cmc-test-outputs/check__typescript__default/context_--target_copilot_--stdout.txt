@@ -1,0 +1,53 @@
+================================================================================
+CMC TEST OUTPUT
+================================================================================
+
+METADATA
+--------
+Timestamp:    2025-12-05 10:27:16
+Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/check/typescript/default
+Command:      cmc context --target copilot --stdout
+Description:  Generate Copilot context (stdout)
+Exit Code:    2
+Duration:     .153768000s
+CMC Version:  1.2.0
+
+PROJECT FILES
+-------------
+total 32
+drwxr-xr-x@ 6 christopherlittle  staff  192  5 Dec 10:21 .
+drwxr-xr-x@ 8 christopherlittle  staff  256  5 Dec 10:21 ..
+-rw-------@ 1 christopherlittle  staff   80  5 Dec 10:21 clean.ts
+-rw-------@ 1 christopherlittle  staff  229  5 Dec 10:21 cmc.toml
+-rw-------@ 1 christopherlittle  staff  234  5 Dec 10:21 eslint.config.js
+-rw-------@ 1 christopherlittle  staff   83  5 Dec 10:21 violation.ts
+
+CMC.TOML CONTENTS
+-----------------
+[project]
+name = "base-test"
+
+[rulesets.eslint.rules]
+"no-var" = "error"
+"prefer-const" = "error"
+"eqeqeq" = ["error", "always"]
+
+[rulesets.ruff]
+line-length = 100
+
+[rulesets.ruff.lint]
+select = ["E", "F", "I"]
+ignore = ["E501"]
+
+STDOUT
+------
+
+STDERR
+------
+Error: No prompts templates configured in cmc.toml.
+
+Add to your cmc.toml:
+  [prompts]
+  templates = ["typescript/5.5"]
+
+================================================================================

@@ -1,0 +1,5 @@
+[project]
+name = "context-test"
+
+[prompts]
+templates = ["typescript/5.5"]

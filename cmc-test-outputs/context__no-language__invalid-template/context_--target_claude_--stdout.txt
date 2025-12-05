@@ -1,0 +1,39 @@
+================================================================================
+CMC TEST OUTPUT
+================================================================================
+
+METADATA
+--------
+Timestamp:    2025-12-05 10:32:25
+Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/context/no-language/invalid-template
+Command:      cmc context --target claude --stdout
+Description:  Generate Claude context (stdout)
+Exit Code:    3
+Duration:     .602811000s
+CMC Version:  1.2.0
+
+PROJECT FILES
+-------------
+total 8
+drwxr-xr-x@ 3 christopherlittle  staff   96  5 Dec 10:21 .
+drwxr-xr-x@ 8 christopherlittle  staff  256  5 Dec 10:21 ..
+-rw-------@ 1 christopherlittle  staff  139  5 Dec 10:21 cmc.toml
+
+CMC.TOML CONTENTS
+-----------------
+[project]
+name = "invalid-template-test"
+
+[prompts]
+# Valid source, but nonexistent template name
+templates = ["nonexistent-template-xyz"]
+
+STDOUT
+------
+
+STDERR
+------
+Error: Template "nonexistent-template-xyz" not found.
+Available templates: python/3.12, typescript/5.5
+
+================================================================================

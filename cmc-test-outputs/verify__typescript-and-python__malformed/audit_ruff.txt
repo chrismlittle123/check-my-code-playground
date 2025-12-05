@@ -1,0 +1,51 @@
+================================================================================
+CMC TEST OUTPUT
+================================================================================
+
+METADATA
+--------
+Timestamp:    2025-12-05 10:33:19
+Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/verify/typescript-and-python/malformed
+Command:      cmc audit ruff
+Description:  Audit Ruff config only
+Exit Code:    3
+Duration:     .294139000s
+CMC Version:  1.2.0
+
+PROJECT FILES
+-------------
+total 24
+drwxr-xr-x@ 5 christopherlittle  staff  160  5 Dec 10:21 .
+drwxr-xr-x@ 7 christopherlittle  staff  224  5 Dec 10:21 ..
+-rw-------@ 1 christopherlittle  staff  162  5 Dec 10:21 cmc.toml
+-rw-------@ 1 christopherlittle  staff  126  5 Dec 10:21 eslint.config.js
+-rw-------@ 1 christopherlittle  staff  108  5 Dec 10:21 ruff.toml
+
+CMC.TOML CONTENTS
+-----------------
+[project]
+name = "malformed-config-test"
+
+[rulesets.eslint.rules]
+"no-var" = "error"
+
+[rulesets.ruff]
+line-length = 100
+
+[rulesets.ruff.lint]
+select = ["E", "F"]
+
+STDOUT
+------
+
+STDERR
+------
+Error: Failed to parse ruff.toml: Unexpected character, expected whitespace, . or ] at row 4, col 6, pos 55:
+3: 
+4> [lint
+        ^
+5: select = ["E", "F"]  # Missing closing bracket above
+
+
+
+================================================================================

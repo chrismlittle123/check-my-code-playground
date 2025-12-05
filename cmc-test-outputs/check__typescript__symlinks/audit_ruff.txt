@@ -1,0 +1,39 @@
+================================================================================
+CMC TEST OUTPUT
+================================================================================
+
+METADATA
+--------
+Timestamp:    2025-12-05 10:27:32
+Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/check/typescript/symlinks
+Command:      cmc audit ruff
+Description:  Audit Ruff config only
+Exit Code:    0
+Duration:     .221810000s
+CMC Version:  1.2.0
+
+PROJECT FILES
+-------------
+total 24
+drwxr-xr-x@ 5 christopherlittle  staff  160  5 Dec 10:21 .
+drwxr-xr-x@ 8 christopherlittle  staff  256  5 Dec 10:21 ..
+-rw-------@ 1 christopherlittle  staff   59  5 Dec 10:21 actual.ts
+-rw-------@ 1 christopherlittle  staff   77  5 Dec 10:21 cmc.toml
+-rw-------@ 1 christopherlittle  staff  221  5 Dec 10:21 eslint.config.js
+
+CMC.TOML CONTENTS
+-----------------
+[project]
+name = "symlinks-test"
+
+[rulesets.eslint.rules]
+"no-var" = "error"
+
+STDOUT
+------
+No linter configs to audit (no rulesets defined in cmc.toml)
+
+STDERR
+------
+
+================================================================================

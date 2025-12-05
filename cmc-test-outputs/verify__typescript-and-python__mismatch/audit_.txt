@@ -1,0 +1,55 @@
+================================================================================
+CMC TEST OUTPUT
+================================================================================
+
+METADATA
+--------
+Timestamp:    2025-12-05 10:33:30
+Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/verify/typescript-and-python/mismatch
+Command:      cmc audit 
+Description:  Audit all linter configs
+Exit Code:    1
+Duration:     .269609000s
+CMC Version:  1.2.0
+
+PROJECT FILES
+-------------
+total 24
+drwxr-xr-x@ 5 christopherlittle  staff  160  5 Dec 10:21 .
+drwxr-xr-x@ 7 christopherlittle  staff  224  5 Dec 10:21 ..
+-rw-r--r--@ 1 christopherlittle  staff  245  5 Dec 10:21 cmc.toml
+-rw-r--r--@ 1 christopherlittle  staff  359  5 Dec 10:21 eslint.config.js
+-rw-r--r--@ 1 christopherlittle  staff  182  5 Dec 10:21 ruff.toml
+
+CMC.TOML CONTENTS
+-----------------
+[project]
+name = "audit-mismatch-test"
+
+[rulesets.eslint.rules]
+"no-var" = "error"
+"prefer-const" = "error"
+"eqeqeq" = ["error", "always"]
+
+[rulesets.ruff]
+line-length = 120
+
+[rulesets.ruff.lint]
+select = ["E", "F", "I", "UP"]
+ignore = ["E501"]
+
+STDOUT
+------
+✗ eslint.config.js has mismatches:
+  - missing rule: prefer-const = "error"
+  - missing rule: eqeqeq = ["error","always"]
+  - extra rule: no-console = "warn"
+✗ ruff.toml has mismatches:
+  - different value: line-length (expected 120, got 100)
+  - different value: select (expected ["E","F","I","UP"], got ["E","F"])
+  - missing rule: ignore = ["E501"]
+
+STDERR
+------
+
+================================================================================

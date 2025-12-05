@@ -1,0 +1,39 @@
+================================================================================
+CMC TEST OUTPUT
+================================================================================
+
+METADATA
+--------
+Timestamp:    2025-12-05 10:26:57
+Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/check/config-errors/missing-name
+Command:      cmc audit eslint
+Description:  Audit ESLint config only
+Exit Code:    2
+Duration:     .158821000s
+CMC Version:  1.2.0
+
+PROJECT FILES
+-------------
+total 8
+drwxr-xr-x@ 3 christopherlittle  staff   96  5 Dec 10:21 .
+drwxr-xr-x@ 4 christopherlittle  staff  128  5 Dec 10:21 ..
+-rw-------@ 1 christopherlittle  staff  126  5 Dec 10:21 cmc.toml
+
+CMC.TOML CONTENTS
+-----------------
+# Valid TOML but missing required project.name field
+[project]
+# name is missing!
+
+[rulesets.eslint.rules]
+"no-var" = "error"
+
+STDOUT
+------
+
+STDERR
+------
+Error: Invalid cmc.toml:
+  - project.name: Invalid input: expected string, received undefined
+
+================================================================================

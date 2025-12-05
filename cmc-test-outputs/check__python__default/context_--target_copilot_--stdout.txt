@@ -1,0 +1,42 @@
+================================================================================
+CMC TEST OUTPUT
+================================================================================
+
+METADATA
+--------
+Timestamp:    2025-12-05 10:27:04
+Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/check/python/default
+Command:      cmc context --target copilot --stdout
+Description:  Generate Copilot context (stdout)
+Exit Code:    2
+Duration:     .158610000s
+CMC Version:  1.2.0
+
+PROJECT FILES
+-------------
+total 32
+drwxr-xr-x@ 7 christopherlittle  staff  224  5 Dec 10:27 .
+drwxr-xr-x@ 3 christopherlittle  staff   96  5 Dec 10:21 ..
+drwxr-xr-x@ 5 christopherlittle  staff  160  5 Dec 10:27 .ruff_cache
+-rw-------@ 1 christopherlittle  staff  121  5 Dec 10:21 clean.py
+-rw-------@ 1 christopherlittle  staff   31  5 Dec 10:21 cmc.toml
+-rw-------@ 1 christopherlittle  staff   51  5 Dec 10:21 ruff.toml
+-rw-------@ 1 christopherlittle  staff  125  5 Dec 10:21 violation.py
+
+CMC.TOML CONTENTS
+-----------------
+[project]
+name = "python-test"
+
+STDOUT
+------
+
+STDERR
+------
+Error: No prompts templates configured in cmc.toml.
+
+Add to your cmc.toml:
+  [prompts]
+  templates = ["typescript/5.5"]
+
+================================================================================

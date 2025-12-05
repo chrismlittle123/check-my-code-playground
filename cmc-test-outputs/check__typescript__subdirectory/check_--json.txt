@@ -1,0 +1,44 @@
+================================================================================
+CMC TEST OUTPUT
+================================================================================
+
+METADATA
+--------
+Timestamp:    2025-12-05 10:27:27
+Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/check/typescript/subdirectory
+Command:      cmc check --json
+Description:  Run linter checks with JSON output
+Exit Code:    0
+Duration:     .175969000s
+CMC Version:  1.2.0
+
+PROJECT FILES
+-------------
+total 16
+drwxr-xr-x@ 4 christopherlittle  staff  128  5 Dec 10:21 .
+drwxr-xr-x@ 8 christopherlittle  staff  256  5 Dec 10:21 ..
+-rw-------@ 1 christopherlittle  staff   81  5 Dec 10:21 cmc.toml
+-rw-------@ 1 christopherlittle  staff  205  5 Dec 10:21 eslint.config.js
+
+CMC.TOML CONTENTS
+-----------------
+[project]
+name = "subdirectory-test"
+
+[rulesets.eslint.rules]
+"no-var" = "error"
+
+STDOUT
+------
+{
+  "violations": [],
+  "summary": {
+    "files_checked": 0,
+    "violations_count": 0
+  }
+}
+
+STDERR
+------
+
+================================================================================

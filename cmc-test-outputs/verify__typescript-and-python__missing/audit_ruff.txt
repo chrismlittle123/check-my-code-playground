@@ -1,0 +1,40 @@
+================================================================================
+CMC TEST OUTPUT
+================================================================================
+
+METADATA
+--------
+Timestamp:    2025-12-05 10:33:39
+Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/verify/typescript-and-python/missing
+Command:      cmc audit ruff
+Description:  Audit Ruff config only
+Exit Code:    3
+Duration:     .329000000s
+CMC Version:  1.2.0
+
+PROJECT FILES
+-------------
+total 8
+drwxr-xr-x@ 3 christopherlittle  staff   96  5 Dec 10:21 .
+drwxr-xr-x@ 7 christopherlittle  staff  224  5 Dec 10:21 ..
+-rw-r--r--@ 1 christopherlittle  staff  117  5 Dec 10:21 cmc.toml
+
+CMC.TOML CONTENTS
+-----------------
+[project]
+name = "audit-missing-test"
+
+[rulesets.eslint.rules]
+"no-var" = "error"
+
+[rulesets.ruff]
+line-length = 100
+
+STDOUT
+------
+
+STDERR
+------
+Error: Linter config file not found: ruff.toml
+
+================================================================================

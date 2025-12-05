@@ -1,0 +1,44 @@
+================================================================================
+CMC TEST OUTPUT
+================================================================================
+
+METADATA
+--------
+Timestamp:    2025-12-05 10:26:54
+Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/check/config-errors/invalid-toml
+Command:      cmc audit eslint
+Description:  Audit ESLint config only
+Exit Code:    2
+Duration:     .172192000s
+CMC Version:  1.2.0
+
+PROJECT FILES
+-------------
+total 8
+drwxr-xr-x@ 3 christopherlittle  staff   96  5 Dec 10:21 .
+drwxr-xr-x@ 4 christopherlittle  staff  128  5 Dec 10:21 ..
+-rw-------@ 1 christopherlittle  staff  161  5 Dec 10:21 cmc.toml
+
+CMC.TOML CONTENTS
+-----------------
+# Invalid TOML - missing closing bracket and bad syntax
+[project
+name = "broken-project"
+
+[rulesets.eslint.rules
+"no-var" = error  # missing quotes around error
+
+STDOUT
+------
+
+STDERR
+------
+Error: Invalid TOML: Unexpected character, expected whitespace, . or ] at row 2, col 9, pos 65:
+1: # Invalid TOML - missing closing bracket and bad syntax
+2> [project
+           ^
+3: name = "broken-project"
+
+
+
+================================================================================

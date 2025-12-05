@@ -1,0 +1,43 @@
+================================================================================
+CMC TEST OUTPUT
+================================================================================
+
+METADATA
+--------
+Timestamp:    2025-12-05 10:27:34
+Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/check/typescript/symlinks
+Command:      cmc context --target copilot --stdout
+Description:  Generate Copilot context (stdout)
+Exit Code:    2
+Duration:     .164873000s
+CMC Version:  1.2.0
+
+PROJECT FILES
+-------------
+total 24
+drwxr-xr-x@ 5 christopherlittle  staff  160  5 Dec 10:21 .
+drwxr-xr-x@ 8 christopherlittle  staff  256  5 Dec 10:21 ..
+-rw-------@ 1 christopherlittle  staff   59  5 Dec 10:21 actual.ts
+-rw-------@ 1 christopherlittle  staff   77  5 Dec 10:21 cmc.toml
+-rw-------@ 1 christopherlittle  staff  221  5 Dec 10:21 eslint.config.js
+
+CMC.TOML CONTENTS
+-----------------
+[project]
+name = "symlinks-test"
+
+[rulesets.eslint.rules]
+"no-var" = "error"
+
+STDOUT
+------
+
+STDERR
+------
+Error: No prompts templates configured in cmc.toml.
+
+Add to your cmc.toml:
+  [prompts]
+  templates = ["typescript/5.5"]
+
+================================================================================

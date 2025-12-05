@@ -1,0 +1,47 @@
+================================================================================
+CMC TEST OUTPUT
+================================================================================
+
+METADATA
+--------
+Timestamp:    2025-12-05 10:32:19
+Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/context/no-language/invalid-source
+Command:      cmc context --target cursor --stdout
+Description:  Generate Cursor context (stdout)
+Exit Code:    3
+Duration:     21.031958000s
+CMC Version:  1.2.0
+
+PROJECT FILES
+-------------
+total 8
+drwxr-xr-x@ 3 christopherlittle  staff   96  5 Dec 10:21 .
+drwxr-xr-x@ 8 christopherlittle  staff  256  5 Dec 10:21 ..
+-rw-------@ 1 christopherlittle  staff  199  5 Dec 10:21 cmc.toml
+
+CMC.TOML CONTENTS
+-----------------
+[project]
+name = "invalid-source-test"
+
+[prompts]
+templates = ["typescript-strict"]
+# Invalid source URL - nonexistent repo
+source = "github:nonexistent-owner-xyz/nonexistent-repo-abc/promptss@main"
+
+STDOUT
+------
+
+STDERR
+------
+Error: Failed to load prompts manifest.
+Source: github:nonexistent-owner-xyz/nonexistent-repo-abc/promptss@main
+Error: Failed to clone git@github.com:nonexistent-owner-xyz/nonexistent-repo-abc.git: Cloning into '/Users/christopherlittle/.cmc/cache/nonexistent-owner-xyz-nonexistent-repo-abc-main-4c4f0ced4e3d'...
+ERROR: Repository not found.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+
+================================================================================

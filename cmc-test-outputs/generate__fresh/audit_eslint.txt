@@ -1,0 +1,46 @@
+================================================================================
+CMC TEST OUTPUT
+================================================================================
+
+METADATA
+--------
+Timestamp:    2025-12-05 10:33:06
+Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/generate/fresh
+Command:      cmc audit eslint
+Description:  Audit ESLint config only
+Exit Code:    3
+Duration:     .163120000s
+CMC Version:  1.2.0
+
+PROJECT FILES
+-------------
+total 8
+drwxr-xr-x@ 3 christopherlittle  staff   96  5 Dec 10:21 .
+drwxr-xr-x@ 5 christopherlittle  staff  160  5 Dec 10:21 ..
+-rw-------@ 1 christopherlittle  staff  245  5 Dec 10:21 cmc.toml
+
+CMC.TOML CONTENTS
+-----------------
+[project]
+name = "fresh-generate-test"
+
+[rulesets.eslint.rules]
+"no-var" = "error"
+"prefer-const" = "error"
+"eqeqeq" = ["error", "always"]
+
+[rulesets.ruff]
+line-length = 120
+
+[rulesets.ruff.lint]
+select = ["E", "F", "I", "UP"]
+ignore = ["E501"]
+
+STDOUT
+------
+
+STDERR
+------
+Error: Linter config file not found: eslint.config.js
+
+================================================================================
