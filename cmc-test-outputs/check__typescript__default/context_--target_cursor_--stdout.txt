@@ -4,12 +4,12 @@ CMC TEST OUTPUT
 
 METADATA
 --------
-Timestamp:    2025-12-05 10:27:15
+Timestamp:    2025-12-05 11:25:26
 Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/check/typescript/default
 Command:      cmc context --target cursor --stdout
 Description:  Generate Cursor context (stdout)
 Exit Code:    2
-Duration:     .155432000s
+Duration:     .224780000s
 CMC Version:  1.2.0
 
 PROJECT FILES

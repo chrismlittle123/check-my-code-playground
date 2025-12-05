@@ -4,12 +4,12 @@ CMC TEST OUTPUT
 
 METADATA
 --------
-Timestamp:    2025-12-05 10:27:23
+Timestamp:    2025-12-05 11:25:48
 Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/check/typescript/special-chars
 Command:      cmc check 
 Description:  Run linter checks on entire project
-Exit Code:    0
-Duration:     .158502000s
+Exit Code:    1
+Duration:     2.938279000s
 CMC Version:  1.2.0
 
 PROJECT FILES
@@ -33,10 +33,13 @@ name = "special-chars-test"
 
 STDOUT
 ------
-✓ No violations found (3 files checked)
+file-with-dashes.ts:2 [eslint/no-var] Unexpected var, use let or const instead.
+file.multiple.dots.ts:2 [eslint/no-var] Unexpected var, use let or const instead.
+file_with_underscores.ts:2 [eslint/no-var] Unexpected var, use let or const instead.
+
+✗ 3 violations found
 
 STDERR
 ------
-Warning: ESLint not found, skipping JavaScript/TypeScript file checks
 
 ================================================================================

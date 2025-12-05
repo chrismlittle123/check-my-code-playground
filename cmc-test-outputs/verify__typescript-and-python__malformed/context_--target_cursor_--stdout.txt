@@ -4,12 +4,12 @@ CMC TEST OUTPUT
 
 METADATA
 --------
-Timestamp:    2025-12-05 10:33:24
+Timestamp:    2025-12-05 11:27:17
 Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/verify/typescript-and-python/malformed
 Command:      cmc context --target cursor --stdout
 Description:  Generate Cursor context (stdout)
 Exit Code:    2
-Duration:     .340430000s
+Duration:     .170484000s
 CMC Version:  1.2.0
 
 PROJECT FILES

@@ -4,12 +4,12 @@ CMC TEST OUTPUT
 
 METADATA
 --------
-Timestamp:    2025-12-05 10:27:36
+Timestamp:    2025-12-05 11:26:10
 Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/context/no-language/invalid-source
 Command:      cmc audit ruff
 Description:  Audit Ruff config only
 Exit Code:    0
-Duration:     .194613000s
+Duration:     .261075000s
 CMC Version:  1.2.0
 
 PROJECT FILES

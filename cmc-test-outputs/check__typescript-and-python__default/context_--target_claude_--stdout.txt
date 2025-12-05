@@ -4,12 +4,12 @@ CMC TEST OUTPUT
 
 METADATA
 --------
-Timestamp:    2025-12-05 10:27:07
+Timestamp:    2025-12-05 11:25:10
 Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/check/typescript-and-python/default
 Command:      cmc context --target claude --stdout
 Description:  Generate Claude context (stdout)
 Exit Code:    2
-Duration:     .168563000s
+Duration:     .307791000s
 CMC Version:  1.2.0
 
 PROJECT FILES

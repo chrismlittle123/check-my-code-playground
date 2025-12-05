@@ -4,12 +4,12 @@ CMC TEST OUTPUT
 
 METADATA
 --------
-Timestamp:    2025-12-05 10:33:21
+Timestamp:    2025-12-05 11:27:17
 Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/verify/typescript-and-python/malformed
 Command:      cmc generate ruff --stdout
 Description:  Generate Ruff config (stdout)
 Exit Code:    0
-Duration:     .207066000s
+Duration:     .239304000s
 CMC Version:  1.2.0
 
 PROJECT FILES

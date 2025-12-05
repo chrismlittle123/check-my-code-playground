@@ -4,12 +4,12 @@ CMC TEST OUTPUT
 
 METADATA
 --------
-Timestamp:    2025-12-05 10:27:20
+Timestamp:    2025-12-05 11:25:38
 Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/check/typescript/multi-violations
 Command:      cmc check --json
 Description:  Run linter checks with JSON output
-Exit Code:    0
-Duration:     .201414000s
+Exit Code:    1
+Duration:     1.091944000s
 CMC Version:  1.2.0
 
 PROJECT FILES
@@ -35,15 +35,87 @@ name = "multi-violations-test"
 STDOUT
 ------
 {
-  "violations": [],
+  "violations": [
+    {
+      "file": "file-a.ts",
+      "line": 2,
+      "column": 1,
+      "rule": "no-var",
+      "message": "Unexpected var, use let or const instead.",
+      "linter": "eslint"
+    },
+    {
+      "file": "file-a.ts",
+      "line": 3,
+      "column": 1,
+      "rule": "no-var",
+      "message": "Unexpected var, use let or const instead.",
+      "linter": "eslint"
+    },
+    {
+      "file": "file-a.ts",
+      "line": 4,
+      "column": 5,
+      "rule": "prefer-const",
+      "message": "'a3' is never reassigned. Use 'const' instead.",
+      "linter": "eslint"
+    },
+    {
+      "file": "file-a.ts",
+      "line": 5,
+      "column": 8,
+      "rule": "eqeqeq",
+      "message": "Expected '===' and instead saw '=='.",
+      "linter": "eslint"
+    },
+    {
+      "file": "file-a.ts",
+      "line": 5,
+      "column": 15,
+      "rule": "no-empty",
+      "message": "Empty block statement.",
+      "linter": "eslint"
+    },
+    {
+      "file": "file-b.ts",
+      "line": 2,
+      "column": 1,
+      "rule": "no-var",
+      "message": "Unexpected var, use let or const instead.",
+      "linter": "eslint"
+    },
+    {
+      "file": "file-b.ts",
+      "line": 3,
+      "column": 5,
+      "rule": "prefer-const",
+      "message": "'b2' is never reassigned. Use 'const' instead.",
+      "linter": "eslint"
+    },
+    {
+      "file": "file-b.ts",
+      "line": 4,
+      "column": 8,
+      "rule": "eqeqeq",
+      "message": "Expected '!==' and instead saw '!='.",
+      "linter": "eslint"
+    },
+    {
+      "file": "file-b.ts",
+      "line": 4,
+      "column": 15,
+      "rule": "no-empty",
+      "message": "Empty block statement.",
+      "linter": "eslint"
+    }
+  ],
   "summary": {
     "files_checked": 2,
-    "violations_count": 0
+    "violations_count": 9
   }
 }
 
 STDERR
 ------
-Warning: ESLint not found, skipping JavaScript/TypeScript file checks
 
 ================================================================================

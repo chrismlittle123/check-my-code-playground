@@ -4,12 +4,12 @@ CMC TEST OUTPUT
 
 METADATA
 --------
-Timestamp:    2025-12-05 10:33:31
+Timestamp:    2025-12-05 11:27:25
 Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/verify/typescript-and-python/mismatch
 Command:      cmc audit ruff
 Description:  Audit Ruff config only
 Exit Code:    1
-Duration:     .162528000s
+Duration:     .663393000s
 CMC Version:  1.2.0
 
 PROJECT FILES

@@ -4,12 +4,12 @@ CMC TEST OUTPUT
 
 METADATA
 --------
-Timestamp:    2025-12-05 10:32:25
+Timestamp:    2025-12-05 11:26:22
 Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/context/no-language/invalid-template
 Command:      cmc context --target claude --stdout
 Description:  Generate Claude context (stdout)
 Exit Code:    3
-Duration:     .602811000s
+Duration:     .720980000s
 CMC Version:  1.2.0
 
 PROJECT FILES

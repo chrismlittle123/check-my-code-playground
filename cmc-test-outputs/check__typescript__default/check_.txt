@@ -4,12 +4,12 @@ CMC TEST OUTPUT
 
 METADATA
 --------
-Timestamp:    2025-12-05 10:27:12
+Timestamp:    2025-12-05 11:25:21
 Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/check/typescript/default
 Command:      cmc check 
 Description:  Run linter checks on entire project
-Exit Code:    0
-Duration:     .174088000s
+Exit Code:    1
+Duration:     1.445215000s
 CMC Version:  1.2.0
 
 PROJECT FILES
@@ -41,10 +41,11 @@ ignore = ["E501"]
 
 STDOUT
 ------
-✓ No violations found (2 files checked)
+violation.ts:2 [eslint/no-var] Unexpected var, use let or const instead.
+
+✗ 1 violation found
 
 STDERR
 ------
-Warning: ESLint not found, skipping JavaScript/TypeScript file checks
 
 ================================================================================

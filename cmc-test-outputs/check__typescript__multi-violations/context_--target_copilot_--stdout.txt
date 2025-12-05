@@ -4,12 +4,12 @@ CMC TEST OUTPUT
 
 METADATA
 --------
-Timestamp:    2025-12-05 10:27:23
+Timestamp:    2025-12-05 11:25:44
 Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/check/typescript/multi-violations
 Command:      cmc context --target copilot --stdout
 Description:  Generate Copilot context (stdout)
 Exit Code:    2
-Duration:     .162706000s
+Duration:     .355021000s
 CMC Version:  1.2.0
 
 PROJECT FILES

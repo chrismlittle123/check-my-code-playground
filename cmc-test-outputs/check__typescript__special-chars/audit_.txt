@@ -4,12 +4,12 @@ CMC TEST OUTPUT
 
 METADATA
 --------
-Timestamp:    2025-12-05 10:27:24
+Timestamp:    2025-12-05 11:25:50
 Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/check/typescript/special-chars
 Command:      cmc audit 
 Description:  Audit all linter configs
 Exit Code:    0
-Duration:     .162778000s
+Duration:     .165308000s
 CMC Version:  1.2.0
 
 PROJECT FILES

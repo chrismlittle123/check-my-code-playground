@@ -4,12 +4,12 @@ CMC TEST OUTPUT
 
 METADATA
 --------
-Timestamp:    2025-12-05 10:33:36
+Timestamp:    2025-12-05 11:27:28
 Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/verify/typescript-and-python/missing
 Command:      cmc check 
 Description:  Run linter checks on entire project
 Exit Code:    0
-Duration:     .421093000s
+Duration:     .248702000s
 CMC Version:  1.2.0
 
 PROJECT FILES

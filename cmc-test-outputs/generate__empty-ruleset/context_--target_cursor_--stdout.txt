@@ -4,12 +4,12 @@ CMC TEST OUTPUT
 
 METADATA
 --------
-Timestamp:    2025-12-05 10:33:00
+Timestamp:    2025-12-05 11:26:56
 Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/generate/empty-ruleset
 Command:      cmc context --target cursor --stdout
 Description:  Generate Cursor context (stdout)
 Exit Code:    2
-Duration:     .190966000s
+Duration:     .170333000s
 CMC Version:  1.2.0
 
 PROJECT FILES

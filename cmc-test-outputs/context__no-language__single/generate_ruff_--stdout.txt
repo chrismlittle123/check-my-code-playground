@@ -4,12 +4,12 @@ CMC TEST OUTPUT
 
 METADATA
 --------
-Timestamp:    2025-12-05 10:32:53
+Timestamp:    2025-12-05 11:26:48
 Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/context/no-language/single
 Command:      cmc generate ruff --stdout
 Description:  Generate Ruff config (stdout)
 Exit Code:    0
-Duration:     .157319000s
+Duration:     .207179000s
 CMC Version:  1.2.0
 
 PROJECT FILES

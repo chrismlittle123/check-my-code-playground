@@ -4,12 +4,12 @@ CMC TEST OUTPUT
 
 METADATA
 --------
-Timestamp:    2025-12-05 10:27:09
+Timestamp:    2025-12-05 11:25:14
 Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/check/typescript-and-python/no-linters
 Command:      cmc audit 
 Description:  Audit all linter configs
 Exit Code:    3
-Duration:     .154450000s
+Duration:     .189526000s
 CMC Version:  1.2.0
 
 PROJECT FILES

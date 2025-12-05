@@ -4,12 +4,12 @@ CMC TEST OUTPUT
 
 METADATA
 --------
-Timestamp:    2025-12-05 10:32:46
+Timestamp:    2025-12-05 11:26:41
 Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/context/no-language/private-repo
 Command:      cmc generate eslint --stdout
 Description:  Generate ESLint config (stdout)
 Exit Code:    0
-Duration:     .180140000s
+Duration:     .215288000s
 CMC Version:  1.2.0
 
 PROJECT FILES

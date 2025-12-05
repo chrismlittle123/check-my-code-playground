@@ -4,12 +4,12 @@ CMC TEST OUTPUT
 
 METADATA
 --------
-Timestamp:    2025-12-05 10:27:24
+Timestamp:    2025-12-05 11:25:51
 Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/check/typescript/special-chars
 Command:      cmc audit eslint
 Description:  Audit ESLint config only
 Exit Code:    0
-Duration:     .155907000s
+Duration:     .243400000s
 CMC Version:  1.2.0
 
 PROJECT FILES

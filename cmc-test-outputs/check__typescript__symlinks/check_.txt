@@ -4,12 +4,12 @@ CMC TEST OUTPUT
 
 METADATA
 --------
-Timestamp:    2025-12-05 10:27:30
+Timestamp:    2025-12-05 11:26:02
 Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/check/typescript/symlinks
 Command:      cmc check 
 Description:  Run linter checks on entire project
-Exit Code:    0
-Duration:     .171995000s
+Exit Code:    1
+Duration:     1.554164000s
 CMC Version:  1.2.0
 
 PROJECT FILES
@@ -31,10 +31,11 @@ name = "symlinks-test"
 
 STDOUT
 ------
-✓ No violations found (1 files checked)
+actual.ts:2 [eslint/no-var] Unexpected var, use let or const instead.
+
+✗ 1 violation found
 
 STDERR
 ------
-Warning: ESLint not found, skipping JavaScript/TypeScript file checks
 
 ================================================================================

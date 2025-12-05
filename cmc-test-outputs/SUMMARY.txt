@@ -2,7 +2,7 @@
 CMC TEST HARNESS - SUMMARY REPORT
 ================================================================================
 
-Generated: 2025-12-05 10:26:52
+Generated: 2025-12-05 11:24:37
 CMC Version: 1.2.0
 
 PROJECTS TESTED
@@ -120,8 +120,8 @@ RESULTS BY PROJECT
   [FAIL] cmc context --target copilot --stdout -> context_--target_copilot_--stdout.txt
 
 /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/check/typescript/default:
-  [PASS] cmc check  -> check_.txt
-  [PASS] cmc check --json -> check_--json.txt
+  [FAIL] cmc check  -> check_.txt
+  [FAIL] cmc check --json -> check_--json.txt
   [FAIL] cmc audit  -> audit_.txt
   [FAIL] cmc audit eslint -> audit_eslint.txt
   [FAIL] cmc audit ruff -> audit_ruff.txt
@@ -144,8 +144,8 @@ RESULTS BY PROJECT
   [FAIL] cmc context --target copilot --stdout -> context_--target_copilot_--stdout.txt
 
 /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/check/typescript/multi-violations:
-  [PASS] cmc check  -> check_.txt
-  [PASS] cmc check --json -> check_--json.txt
+  [FAIL] cmc check  -> check_.txt
+  [FAIL] cmc check --json -> check_--json.txt
   [FAIL] cmc audit  -> audit_.txt
   [FAIL] cmc audit eslint -> audit_eslint.txt
   [PASS] cmc audit ruff -> audit_ruff.txt
@@ -156,8 +156,8 @@ RESULTS BY PROJECT
   [FAIL] cmc context --target copilot --stdout -> context_--target_copilot_--stdout.txt
 
 /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/check/typescript/special-chars:
-  [PASS] cmc check  -> check_.txt
-  [PASS] cmc check --json -> check_--json.txt
+  [FAIL] cmc check  -> check_.txt
+  [FAIL] cmc check --json -> check_--json.txt
   [PASS] cmc audit  -> audit_.txt
   [PASS] cmc audit eslint -> audit_eslint.txt
   [PASS] cmc audit ruff -> audit_ruff.txt
@@ -180,8 +180,8 @@ RESULTS BY PROJECT
   [FAIL] cmc context --target copilot --stdout -> context_--target_copilot_--stdout.txt
 
 /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/check/typescript/symlinks:
-  [PASS] cmc check  -> check_.txt
-  [PASS] cmc check --json -> check_--json.txt
+  [FAIL] cmc check  -> check_.txt
+  [FAIL] cmc check --json -> check_--json.txt
   [PASS] cmc audit  -> audit_.txt
   [PASS] cmc audit eslint -> audit_eslint.txt
   [PASS] cmc audit ruff -> audit_ruff.txt
@@ -363,9 +363,9 @@ RESULTS BY PROJECT
 FINAL STATISTICS
 ================================================================================
 Total Tests:  250
-Passed:       136
-Failed:       114
-Pass Rate:    54.4%
+Passed:       128
+Failed:       122
+Pass Rate:    51.2%
 
 Output Location: /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/cmc-test-outputs
 ================================================================================

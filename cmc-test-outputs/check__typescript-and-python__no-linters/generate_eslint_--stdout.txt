@@ -4,12 +4,12 @@ CMC TEST OUTPUT
 
 METADATA
 --------
-Timestamp:    2025-12-05 10:27:10
+Timestamp:    2025-12-05 11:25:16
 Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/check/typescript-and-python/no-linters
 Command:      cmc generate eslint --stdout
 Description:  Generate ESLint config (stdout)
 Exit Code:    0
-Duration:     .151691000s
+Duration:     .183592000s
 CMC Version:  1.2.0
 
 PROJECT FILES

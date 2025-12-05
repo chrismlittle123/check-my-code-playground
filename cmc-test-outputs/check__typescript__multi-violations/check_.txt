@@ -4,12 +4,12 @@ CMC TEST OUTPUT
 
 METADATA
 --------
-Timestamp:    2025-12-05 10:27:19
+Timestamp:    2025-12-05 11:25:37
 Project:      /Users/christopherlittle/Documents/GitHub/personal/check-my-code-playground/projects/check/typescript/multi-violations
 Command:      cmc check 
 Description:  Run linter checks on entire project
-Exit Code:    0
-Duration:     .161718000s
+Exit Code:    1
+Duration:     1.610920000s
 CMC Version:  1.2.0
 
 PROJECT FILES
@@ -34,10 +34,19 @@ name = "multi-violations-test"
 
 STDOUT
 ------
-✓ No violations found (2 files checked)
+file-a.ts:2 [eslint/no-var] Unexpected var, use let or const instead.
+file-a.ts:3 [eslint/no-var] Unexpected var, use let or const instead.
+file-a.ts:4 [eslint/prefer-const] 'a3' is never reassigned. Use 'const' instead.
+file-a.ts:5 [eslint/eqeqeq] Expected '===' and instead saw '=='.
+file-a.ts:5 [eslint/no-empty] Empty block statement.
+file-b.ts:2 [eslint/no-var] Unexpected var, use let or const instead.
+file-b.ts:3 [eslint/prefer-const] 'b2' is never reassigned. Use 'const' instead.
+file-b.ts:4 [eslint/eqeqeq] Expected '!==' and instead saw '!='.
+file-b.ts:4 [eslint/no-empty] Empty block statement.
+
+✗ 9 violations found
 
 STDERR
 ------
-Warning: ESLint not found, skipping JavaScript/TypeScript file checks
 
 ================================================================================
