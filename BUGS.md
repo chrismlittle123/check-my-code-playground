@@ -1,38 +1,8 @@
 # Bugs Found in check-my-code (cmc)
 
-> **Last Verified:** December 8, 2025 against v1.5.9
+> **Last Verified:** December 8, 2025 against v1.5.11
 
 ## Active Bugs
-
-### BUG: CLI `--json` Flag Outputs Plain Text Errors Instead of JSON
-
-**Severity:** Medium
-
-**Description:** When using the `--json` flag with `cmc check`, errors are output as plain text instead of JSON format. This breaks JSON parsing in CI/CD pipelines and tooling that expects consistent JSON output.
-
-**Steps to Reproduce:**
-```bash
-$ cmc check --json nonexistent-file.py
-Error: Path not found: nonexistent-file.py
-$ echo $?
-2
-```
-
-**Expected Behavior:** Error should be returned as JSON:
-```json
-{
-  "error": {
-    "code": "CONFIG_ERROR",
-    "message": "Path not found: nonexistent-file.py"
-  }
-}
-```
-
-**Actual Behavior:** Plain text error message is output, breaking JSON consumers.
-
-**Location:** `src/cli/commands/check.ts` lines 28-41 - the catch block outputs plain text regardless of `options.json` flag.
-
----
 
 ### BUG: MCP `check_project` Returns "No Lintable Files" for Subdirectories with Own cmc.toml
 
@@ -121,22 +91,16 @@ $ echo $?
 
 ---
 
-### BUG: `cmc audit eslint` Incorrectly Parses Commented-Out Rules
+## Fixed Bugs
 
-**Severity:** Medium
+### ✅ FIXED in v1.5.11: `cmc audit eslint` Incorrectly Parses Commented-Out Rules
 
-**Description:** The `cmc audit eslint` command uses regex-based parsing to extract rules from `eslint.config.js`. This parser incorrectly matches rules that appear in comments, causing the audit to believe rules exist when they are actually commented out.
+**Previous Issue:** The `cmc audit eslint` command's regex-based parser incorrectly matched rules in JavaScript comments, causing the audit to believe commented-out rules existed.
 
-**Steps to Reproduce:**
+**Status:** Fixed. The parser now correctly ignores commented-out rules.
+
+**Verified:**
 ```bash
-# Create cmc.toml expecting a rule
-$ cat cmc.toml
-[project]
-name = "test"
-[rulesets.eslint]
-rules = { "@typescript-eslint/no-unused-vars" = "warn" }
-
-# Create eslint.config.js with the rule COMMENTED OUT
 $ cat eslint.config.js
 export default [
   {
@@ -147,27 +111,32 @@ export default [
   }
 ];
 
-# Run audit
 $ cmc audit eslint
 ✗ eslint.config.js has mismatches:
+  - missing rule: @typescript-eslint/no-unused-vars = "warn"
   - extra rule: no-console = "warn"
 ```
 
-**Expected Behavior:** Should report:
-- missing rule: `@typescript-eslint/no-unused-vars = "warn"`
-- extra rule: `no-console = "warn"`
-
-**Actual Behavior:** Only reports the extra rule. The commented-out rule is incorrectly parsed as if it exists, so no "missing rule" is reported.
-
-**Root Cause:** The `extractESLintRules()` function in `src/cli/commands/audit.ts` uses regex patterns that don't account for JavaScript comments. The regex `/'([^']+)'\s*:\s*(['"][^'"]+['"]|\[[^\]]+\])/g` matches quoted strings regardless of whether they're in comments.
-
-**Location:** `src/cli/commands/audit.ts` - `extractESLintRules()`, `parseRulesManually()` functions (lines ~270-312)
-
-**Impact:** CI/CD pipelines relying on `cmc audit` may incorrectly pass when required rules are commented out, giving false confidence that the ESLint config matches the cmc.toml specification.
-
 ---
 
-## Fixed Bugs
+### ✅ FIXED in v1.5.11: CLI `--json` Flag Outputs Plain Text Errors Instead of JSON
+
+**Previous Issue:** When using `--json` flag with `cmc check`, errors were output as plain text instead of JSON.
+
+**Status:** Fixed. Errors are now returned as JSON when `--json` flag is used.
+
+**Verified:**
+```bash
+$ cmc check --json nonexistent-file.py
+{
+  "error": {
+    "code": "CONFIG_ERROR",
+    "message": "Path not found: nonexistent-file.py"
+  }
+}
+```
+
+---
 
 ### ✅ FIXED in v1.5.9: MCP Server `check_project` Returns "No Lintable Files" for Subdirectories
 
@@ -248,6 +217,6 @@ $ echo $?
 
 ## Test Environment
 - **OS:** macOS Darwin 24.6.0
-- **cmc version:** 1.5.9
+- **cmc version:** 1.5.11
 - **Node version:** >= 20 (as required)
 - **Install method:** npm global install
