@@ -121,6 +121,52 @@ $ echo $?
 
 ---
 
+### BUG: `cmc audit eslint` Incorrectly Parses Commented-Out Rules
+
+**Severity:** Medium
+
+**Description:** The `cmc audit eslint` command uses regex-based parsing to extract rules from `eslint.config.js`. This parser incorrectly matches rules that appear in comments, causing the audit to believe rules exist when they are actually commented out.
+
+**Steps to Reproduce:**
+```bash
+# Create cmc.toml expecting a rule
+$ cat cmc.toml
+[project]
+name = "test"
+[rulesets.eslint]
+rules = { "@typescript-eslint/no-unused-vars" = "warn" }
+
+# Create eslint.config.js with the rule COMMENTED OUT
+$ cat eslint.config.js
+export default [
+  {
+    rules: {
+      // "@typescript-eslint/no-unused-vars": "warn",
+      "no-console": "warn"
+    },
+  }
+];
+
+# Run audit
+$ cmc audit eslint
+✗ eslint.config.js has mismatches:
+  - extra rule: no-console = "warn"
+```
+
+**Expected Behavior:** Should report:
+- missing rule: `@typescript-eslint/no-unused-vars = "warn"`
+- extra rule: `no-console = "warn"`
+
+**Actual Behavior:** Only reports the extra rule. The commented-out rule is incorrectly parsed as if it exists, so no "missing rule" is reported.
+
+**Root Cause:** The `extractESLintRules()` function in `src/cli/commands/audit.ts` uses regex patterns that don't account for JavaScript comments. The regex `/'([^']+)'\s*:\s*(['"][^'"]+['"]|\[[^\]]+\])/g` matches quoted strings regardless of whether they're in comments.
+
+**Location:** `src/cli/commands/audit.ts` - `extractESLintRules()`, `parseRulesManually()` functions (lines ~270-312)
+
+**Impact:** CI/CD pipelines relying on `cmc audit` may incorrectly pass when required rules are commented out, giving false confidence that the ESLint config matches the cmc.toml specification.
+
+---
+
 ## Fixed Bugs
 
 ### ✅ FIXED in v1.5.9: MCP Server `check_project` Returns "No Lintable Files" for Subdirectories
