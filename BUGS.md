@@ -1,6 +1,6 @@
 # Bugs Found in check-my-code (cmc)
 
-> **Last Verified:** December 9, 2025 against v1.6.5
+> **Last Verified:** December 9, 2025 against v1.6.6
 
 ## Active Bugs
 
@@ -76,7 +76,9 @@ cmc context --target claude
 
 ---
 
-### BUG: Non-Lintable Files Counted as "Checked"
+## Fixed Bugs
+
+### ~~BUG: Non-Lintable Files Counted as "Checked"~~ ✅ FIXED in v1.6.6
 
 **Severity:** Low
 
@@ -102,9 +104,9 @@ cmc check noextension config.json
 
 **Actual Behavior:** Files are counted as "checked" even though no linter ran on them, which is misleading.
 
----
+**Fix:** v1.6.6 now correctly reports "0 files checked" for non-lintable files.
 
-## Fixed Bugs
+---
 
 ### ~~BUG: `[files]` Section `include`/`exclude` Patterns Have No Effect~~ ✅ FIXED in v1.6.5
 
@@ -327,6 +329,6 @@ Error: Failed to load rulesets.json manifest: Failed to clone...: fatal: could n
 
 ## Test Environment
 - **OS:** macOS Darwin 24.6.0
-- **cmc version:** 1.6.5
+- **cmc version:** 1.6.6
 - **Node version:** >= 20 (as required)
 - **Install method:** npm global install
