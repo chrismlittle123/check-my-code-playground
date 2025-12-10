@@ -1,51 +1,16 @@
 # Bugs Found in check-my-code (cmc)
 
-> **Last Verified:** December 9, 2025 against v1.6.6
+> **Last Verified:** December 10, 2025 against v1.7.0
 
 ## Active Bugs
 
-### BUG: `[rulesets]` Config Not Applied Without Running `cmc generate` First
-
-**Severity:** High
-
-**Description:** Linter configurations defined in `[rulesets.eslint]` or `[rulesets.ruff]` sections of `cmc.toml` are NOT applied during `cmc check` unless you first manually run `cmc generate <linter>` to create the config files. This is a significant usability issue as users expect `cmc.toml` to be the source of truth.
-
-**Steps to Reproduce:**
-```bash
-rm -f eslint.config.js ruff.toml
-
-cat > cmc.toml << 'EOF'
-[project]
-name = "test"
-
-[rulesets.eslint]
-rules = { "no-console" = "off" }
-
-[rulesets.ruff.lint]
-ignore = ["F401"]
-EOF
-
-echo 'console.log("test");' > test.ts
-echo 'import os' > test.py
-
-cmc check .
-# Expected: no-console should be off, F401 should be ignored
-# Actual: Both rules still trigger violations!
-```
-
-**Expected Behavior:** Rules defined in `cmc.toml` should be applied directly during `cmc check` without needing to generate config files.
-
-**Actual Behavior:** Rules are ignored unless you first run:
-```bash
-cmc generate eslint --force
-cmc generate ruff --force
-```
-
-**Workaround:** Always run `cmc generate <linter>` after modifying `cmc.toml` rulesets, or add it to your workflow.
+No active bugs at this time.
 
 ---
 
-### BUG: Invalid `[prompts]` Templates Pass Validation But Fail at Runtime
+## Fixed Bugs
+
+### ~~BUG: Invalid `[prompts]` Templates Pass Validation But Fail at Runtime~~ ✅ FIXED in v1.7.0
 
 **Severity:** Medium
 
@@ -74,9 +39,13 @@ cmc context --target claude
 
 **Valid Templates:** `prototype/python/3.12`, `prototype/typescript/5.5`, `internal/python/3.12`, `internal/typescript/5.5`, `production/python/3.12`, `production/typescript/5.5`
 
----
+**Fix:** v1.7.0 now validates template names during `cmc validate` using pattern matching:
+```
+✗ cmc.toml has validation errors:
+  - /prompts/templates/0: must match pattern: ^(prototype|internal|production)/(python|typescript)/[0-9]+\.[0-9]+$
+```
 
-## Fixed Bugs
+---
 
 ### ~~BUG: Non-Lintable Files Counted as "Checked"~~ ✅ FIXED in v1.6.6
 
@@ -329,6 +298,6 @@ Error: Failed to load rulesets.json manifest: Failed to clone...: fatal: could n
 
 ## Test Environment
 - **OS:** macOS Darwin 24.6.0
-- **cmc version:** 1.6.6
+- **cmc version:** 1.7.0
 - **Node version:** >= 20 (as required)
 - **Install method:** npm global install
